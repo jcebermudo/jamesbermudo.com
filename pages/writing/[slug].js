@@ -17,7 +17,14 @@ function Post({ data, content }) {
       </Head>
       <div className="mt-14">
       <Link href="/writing">
-      <a className="text-[#D1D1D2] text-base duration-150 hover:text-indigo-300">↖Go Back</a>
+      <a className="group text-[#D1D1D2] text-base duration-150 hover:text-indigo-300">
+      <span className='inline-block align-top mr-[5px]'>
+        <svg className='stroke-2 stroke-[#D1D1D2] duration-150 group-hover:stroke-indigo-300 group-hover:-translate-y-px group-hover:-translate-x-px' width="9" height="9" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 10L1 1M1 1H8M1 1V8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+        Go Back
+      </a>
       </Link>
       <h1 className="text-[#D1D1D2] text-base font-semibold mt-7">{data.title}</h1>
       <time className="text-[#767677] text-base text-left font-semibold font-date italic mt-7">Published on {data.date}</time>

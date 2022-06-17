@@ -20,7 +20,7 @@ export default function Home() {
         <a href="https://twitter.com/jcebermudo" target="_blank" rel="noreferrer" className='text-[#D1D1D2] text-base duration-150 hover:text-indigo-300'><span className='underline'>Twitter</span>↗</a>
         <a href="https://github.com/jcebermudo" target="_blank" rel="noreferrer" className='text-[#D1D1D2] text-base duration-150 hover:text-indigo-300'><span className='underline'>GitHub</span>↗</a>
       </div>
-      <hr className='mt-7 border-[#767677] opacity-30'/>
+      <hr className='mt-7 border-[#767677] border-dashed opacity-30'/>
       <h2 className='text-[#D1D1D2] text-base font-semibold mt-7'>Projects</h2>
       </>
   )

@@ -5,8 +5,8 @@ import Footy from './Footy'
 const Layout = ({children}) => {
     return(
     <div>
-    <div className="container bg-[#1B1A1D] bg-repeat-y pt-12 pb-24 sm:pt-24 min-h-screen mx-auto max-w-4xl selection:bg-[#d4cae9] selection:text-[#18181a]">
-        <div className='mx-6 sm:mx-44'>
+    <div className="container p-8 mx-auto max-w-lg sm:px-6 sm:py-24 selection:bg-[#d4cae9] selection:text-[#18181a]">
+        <div>
             <Nav/>
                 <main>{children}</main>
             <Footy/>

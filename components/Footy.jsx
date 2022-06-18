@@ -2,7 +2,10 @@ const Footy = () => {
     return (
     <div className="mt-14">
     <hr className='border-[#767677] border-dashed opacity-30'/>
-    <p className='text-[#767677] font-medium text-base mt-7 select-none'>© 2022 James Bermudo</p>
+    <div className="flex flex-row mt-7">
+    <p className='basis-11/12 text-[#767677] font-medium text-base select-none'>© 2022 James Bermudo</p>
+    <a target="_blank" href="https://github.com/jcebermudo/bermudo.me/tree/main" className="basis-1/12 text-[#767677] font-medium text-base select-none duration-150 hover:text-indigo-300">source</a>
+    </div>
     </div>
     )
 }

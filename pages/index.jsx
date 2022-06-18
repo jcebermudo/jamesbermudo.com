@@ -9,11 +9,12 @@ export default function Home() {
       <Head>
         <meta charSet='utf-8'/>
         <title>James Bermudo</title>
+        <meta name="title" content="James Bermudo" />
         <meta name="robots" content="index,follow" />
         <meta name="description" content="A Filipino designer." />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="James Bermudo" />
-        <meta property="og:description" content="A designer making delightful web experiences." />
+        <meta property="og:description" content="A Filipino designer." />
         <meta property="og:site_name" content="James Bermudo" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" type="image/x-icon" href="/favicon.png"></link>

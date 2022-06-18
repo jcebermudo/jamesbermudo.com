@@ -10,12 +10,17 @@ export default function Blog({ posts }) {
   return (
       <>
     <Head>
+        <meta charSet='utf-8'/>
         <title>Writing</title>
-        <link rel="icon" type="image/x-icon" href="/favicon.png"></link>
+        <meta name="title" content="Writing" />
+        <meta name="robots" content="index,follow" />
         <meta name="description" content="Welcome to my digital garden." />
-        <meta name="keywords" content="James Bermudo, Bermudo, James, Designer, Product Designer, Developer, Frontend" />
-        <meta name="author" content="James Bermudo" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Writing" />
+        <meta property="og:description" content="Welcome to my digital garden." />
+        <meta property="og:site_name" content="James Bermudo" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="icon" type="image/x-icon" href="/favicon.png"></link>
     </Head>
       <h2 className='text-[#D1D1D2] text-base font-semibold mt-14'>Posts</h2>
       <div>

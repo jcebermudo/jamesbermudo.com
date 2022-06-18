@@ -10,10 +10,14 @@ function Post({ data, content }) {
     <div>
       <Head>
         <title>{data.title}</title>
-        <link rel="icon" type="image/x-icon" href="/favicon.png"></link>
         <meta name="description" content={data.description}/>
         <meta name="author" content="James Bermudo" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={data.title} />
+        <meta property="og:description" content={data.description} />
+        <meta property="og:site_name" content="James Bermudo" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="icon" type="image/x-icon" href="/favicon.png"></link>
       </Head>
       <div className="mt-14">
       <Link href="/writing">

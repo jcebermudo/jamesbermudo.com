@@ -19,19 +19,19 @@ export default function Home() {
         <a target="_blank" rel="noreferrer" href="mailto:bermudo.elumba@gmail.com" className='group text-[#D1D1D2] underline text-base duration-150 hover:text-indigo-300'>
           Email
           <span className='inline-block align-middle ml-[5px]'><svg className='stroke-2 stroke-[#D1D1D2] duration-150 group-hover:stroke-indigo-300 group-hover:-translate-y-px group-hover:translate-x-px' width="9" height="9" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 10L10 1M10 1H3M10 1V8" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M1 10L10 1M10 1H3M10 1V8" strokeLinecap="round" strokeLinejoin="round"/>
           </svg></span>
         </a>
         <a href="https://twitter.com/jcebermudo" target="_blank" rel="noreferrer" className='group text-[#D1D1D2] underline text-base duration-150 hover:text-indigo-300'>
           Twitter
           <span className='inline-block align-middle ml-[5px]'><svg className='stroke-2 stroke-[#D1D1D2] duration-150 group-hover:stroke-indigo-300 group-hover:-translate-y-px group-hover:translate-x-px' width="9" height="9" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 10L10 1M10 1H3M10 1V8" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M1 10L10 1M10 1H3M10 1V8" strokeLinecap="round" strokeLinejoin="round"/>
           </svg></span>
         </a>
         <a href="https://github.com/jcebermudo" target="_blank" rel="noreferrer" className='group text-[#D1D1D2] underline text-base duration-150 hover:text-indigo-300'>
           GitHub
           <span className='inline-block align-middle ml-[5px]'><svg className='stroke-2 stroke-[#D1D1D2] duration-150 group-hover:stroke-indigo-300 group-hover:-translate-y-px group-hover:translate-x-px' width="9" height="9" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 10L10 1M10 1H3M10 1V8" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M1 10L10 1M10 1H3M10 1V8" strokeLinecap="round" strokeLinejoin="round"/>
           </svg></span>
         </a>
       </div>

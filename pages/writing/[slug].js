@@ -20,7 +20,7 @@ function Post({ data, content }) {
       <a className="group text-[#D1D1D2] text-base duration-150 hover:text-indigo-300">
       <span className='inline-block align-top mr-[5px]'>
         <svg className='stroke-2 stroke-[#D1D1D2] duration-150 group-hover:stroke-indigo-300 group-hover:-translate-y-px group-hover:-translate-x-px' width="9" height="9" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M10 10L1 1M1 1H8M1 1V8" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M10 10L1 1M1 1H8M1 1V8" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       </span>
         Go Back

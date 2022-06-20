@@ -19,6 +19,7 @@ export default function Blog({ posts }) {
         <meta property="og:title" content="Writing" />
         <meta property="og:description" content="Welcome to my digital garden." />
         <meta property="og:site_name" content="James Bermudo" />
+        <meta property="og:image" content="/writing.png"></meta>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" type="image/x-icon" href="/favicon.png"></link>
     </Head>

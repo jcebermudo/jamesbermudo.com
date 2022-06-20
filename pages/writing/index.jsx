@@ -22,7 +22,7 @@ export default function Blog({ posts }) {
         <meta property="og:url" content="https://www.bermudo.me/writing" />
         <meta property="og:image" content="/writing.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="James Bermudo" />
+        <meta name="twitter:title" content="Writing" />
         <meta name="twitter:description" content="Welcome to my digital garden." />
         <meta name="twitter:site" content="@jcebermudo" />
         <meta name="twitter:url" content="https://www.bermudo.me/writing" />

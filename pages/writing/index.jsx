@@ -19,7 +19,15 @@ export default function Blog({ posts }) {
         <meta property="og:title" content="Writing" />
         <meta property="og:description" content="Welcome to my digital garden." />
         <meta property="og:site_name" content="James Bermudo" />
-        <meta property="og:image" content="/writing.png"></meta>
+        <meta property="og:url" content="https://www.bermudo.me/writing" />
+        <meta property="og:image" content="/writing.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="James Bermudo" />
+        <meta name="twitter:description" content="Welcome to my digital garden." />
+        <meta name="twitter:site" content="@jcebermudo" />
+        <meta name="twitter:url" content="https://www.bermudo.me/writing" />
+        <meta name="twitter:creator" content="@jcebermudo" />
+        <meta property="twitter:image" content="/writing.png" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" type="image/x-icon" href="/favicon.png"></link>
     </Head>

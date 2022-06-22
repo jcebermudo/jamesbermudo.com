@@ -4,8 +4,8 @@
 
 html,
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #1111;
+  font-family: "Inter", sans-serif;
+  background-color: #161616;
   margin: 0;
   padding: 0;
   border: 0;
@@ -19,4 +19,3 @@ a {
 * {
   box-sizing: border-box;
 }
-

@@ -6,7 +6,7 @@ const Nav = () => {
   const { asPath } = useRouter();
 
   return (
-    <nav>
+    <header>
       <div className="flex flex-row">
         <div className="basis-11/12">
           <Name />
@@ -42,7 +42,7 @@ const Nav = () => {
           </ul>
         </div>
       </div>
-    </nav>
+    </header>
   );
 };
 

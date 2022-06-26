@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Layout from "../components/Layout";
+import Circles from "../components/Circles";
 import { basename } from "path";
 
 export default function Home() {
@@ -38,10 +39,11 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" type="image/x-icon" href="/favicon.png"></link>
       </Head>
-      <p className="text-[#A4A3A5] text-base mt-14">
-        Hello, I&apos;m a 15 year old designer living in Quezon City,
-        Philippines currently finishing high school. I love to craft internet
-        software from design to code.
+      <Circles />
+      <p className="text-[#A4A3A5] text-base mt-7">
+        I&apos;m a 15 year old designer living in Quezon City, Philippines
+        currently finishing high school. I love to craft internet software from
+        design to code.
         <br />
         <br />
         This website is my little corner on the internet where I showcase my

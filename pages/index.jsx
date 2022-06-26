@@ -148,8 +148,8 @@ export default function Home() {
           <Image
             alt="Base Icon"
             quality="100"
-            width={100}
-            height={100}
+            width={130}
+            height={130}
             layout="fixed"
             src="/images/projects/base.png"
             className="border rounded-md select-none"

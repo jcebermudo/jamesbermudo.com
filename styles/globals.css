@@ -9,11 +9,13 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
+  cursor: url(black-cursor.cur), default;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  cursor: url(cursor-pointer.cur), pointer;
 }
 
 * {

@@ -42,8 +42,8 @@ export default function Home() {
       <Circles />
       <p className="text-[#A4A3A5] text-base mt-7">
         I&apos;m a 15 year old designer living in Quezon City, Philippines
-        currently finishing high school. I love to craft internet software from
-        design to code.
+        currently finishing high school. I love to build software from design to
+        code.
         <br />
         <br />
         This website is my little corner on the internet where I showcase my

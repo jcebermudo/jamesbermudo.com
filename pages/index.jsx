@@ -155,7 +155,7 @@ export default function Home() {
             className="border rounded-md select-none"
           />
         </div>
-        <div className="ml-7">
+        <div className="ml-7 place-self-center">
           <h2 className="text-[#D1D1D2] text-base font-semibold">Base</h2>
           <p className="text-[#A4A3A5] text-base mt-2.5">
             A playful moodboard app.

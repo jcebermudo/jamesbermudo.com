@@ -53,7 +53,7 @@ export default function Home() {
           className="select-none"
         />
       </div>
-      <p className="text-[#8B8B8B] text-base mt-7">
+      <p className="text-[#575757] text-base mt-14">
         I&apos;m a 15 year old designer living in Quezon City, Philippines
         currently finishing high school. I love to build software from design to
         code.
@@ -62,7 +62,7 @@ export default function Home() {
         This website is my little corner on the internet where I showcase my
         projects as well as{" "}
         <Link href="/writing">
-          <a className="text-[#606060] underline text-base duration-150 hover:text-[#19A1FD]">
+          <a className="underline text-base duration-150 hover:text-[#19A1FD]">
             write
           </a>
         </Link>{" "}
@@ -74,7 +74,7 @@ export default function Home() {
           href="https://twitter.com/jcebermudo"
           target="_blank"
           rel="noreferrer"
-          className="text-[#606060] underline text-base duration-150 hover:text-[#19A1FD]"
+          className="underline text-base duration-150 hover:text-[#19A1FD]"
         >
           Twitter
         </a>
@@ -85,12 +85,12 @@ export default function Home() {
           target="_blank"
           rel="noreferrer"
           href="mailto:bermudo.elumba@gmail.com"
-          className="group text-[#606060] underline text-base font-medium duration-150 hover:text-[#19A1FD]"
+          className="group text-[#575757] underline text-base duration-150 hover:text-[#19A1FD]"
         >
           Email
           <span className="inline-block align-middle ml-[5px]">
             <svg
-              className="stroke-2 stroke-[#606060] duration-150 group-hover:stroke-[#19A1FD] group-hover:-translate-y-px group-hover:translate-x-px"
+              className="stroke-1 stroke-[#575757] duration-150 group-hover:stroke-[#19A1FD] group-hover:-translate-y-px group-hover:translate-x-px"
               width="9"
               height="9"
               viewBox="0 0 11 11"
@@ -109,12 +109,12 @@ export default function Home() {
           href="https://twitter.com/jcebermudo"
           target="_blank"
           rel="noreferrer"
-          className="group text-[#606060] underline text-base font-medium duration-150 hover:text-[#19A1FD]"
+          className="group text-[#575757] underline text-base duration-150 hover:text-[#19A1FD]"
         >
           Twitter
           <span className="inline-block align-middle ml-[5px]">
             <svg
-              className="stroke-2 stroke-[#606060] duration-150 group-hover:stroke-[#19A1FD] group-hover:-translate-y-px group-hover:translate-x-px"
+              className="stroke-1 stroke-[#575757] duration-150 group-hover:stroke-[#19A1FD] group-hover:-translate-y-px group-hover:translate-x-px"
               width="9"
               height="9"
               viewBox="0 0 11 11"
@@ -133,12 +133,12 @@ export default function Home() {
           href="https://github.com/jcebermudo"
           target="_blank"
           rel="noreferrer"
-          className="group text-[#606060] underline text-base font-medium duration-150 hover:text-[#19A1FD]"
+          className="group text-[#575757] underline text-base duration-150 hover:text-[#19A1FD]"
         >
           GitHub
           <span className="inline-block align-middle ml-[5px]">
             <svg
-              className="stroke-2 stroke-[#606060] duration-150 group-hover:stroke-[#19A1FD] group-hover:-translate-y-px group-hover:translate-x-px"
+              className="stroke-1 stroke-[#575757] duration-150 group-hover:stroke-[#19A1FD] group-hover:-translate-y-px group-hover:translate-x-px"
               width="9"
               height="9"
               viewBox="0 0 11 11"
@@ -155,7 +155,7 @@ export default function Home() {
         </a>
       </div>
       <hr className="mt-7 border-[#767677] border-dashed opacity-30" />
-      <h2 className="text-[#606060] text-base font-medium mt-7">Projects</h2>
+      <h2 className="text-[#333333] text-base font-medium mt-7">Projects</h2>
       <div className="flex mt-7">
         <div>
           <Image
@@ -170,8 +170,8 @@ export default function Home() {
           />
         </div>
         <div className="ml-7 place-self-center">
-          <h2 className="text-[#606060] text-base font-medium">Base</h2>
-          <p className="text-[#8B8B8B] text-base mt-2.5">
+          <h2 className="text-[#333333] text-base font-medium">Base</h2>
+          <p className="text-[#575757] text-base mt-2.5">
             A playful moodboard app.
           </p>
           <p className="text-[#A1A1A1] text-base mt-2.5">Releasing soon</p>

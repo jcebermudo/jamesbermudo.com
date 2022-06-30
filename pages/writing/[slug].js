@@ -21,10 +21,10 @@ function Post({ data, content }) {
       </Head>
       <div className="mt-14">
         <Link href="/writing">
-          <a className="group text-[#606060] text-base duration-150 hover:text-[#19A1FD]">
+          <a className="group text-[#575757] text-base duration-150 hover:text-[#19A1FD]">
             <span className="inline-block align-top mr-[5px]">
               <svg
-                className="stroke-2 stroke-[#606060] duration-150 group-hover:stroke-[#19A1FD] group-hover:-translate-y-px group-hover:-translate-x-px"
+                className="stroke-1 stroke-[#575757] duration-150 group-hover:stroke-[#19A1FD] group-hover:-translate-y-px group-hover:-translate-x-px"
                 width="9"
                 height="9"
                 viewBox="0 0 11 11"
@@ -41,10 +41,10 @@ function Post({ data, content }) {
             Go Back
           </a>
         </Link>
-        <h1 className="text-[#606060] text-base font-medium mt-7">
+        <h1 className="text-[#333333] text-base font-medium mt-7">
           {data.title}
         </h1>
-        <time className="text-[#9c9c9c] text-base text-left font-semibold font-date italic mt-7">
+        <time className="text-[#A1A1A1] text-base text-left font-medium font-date italic mt-7">
           Published on {data.date}
         </time>
         <div

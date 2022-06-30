@@ -50,7 +50,7 @@ export default function Blog({ posts }) {
           className="select-none"
         />
       </div>
-      <h2 className="text-[#606060] text-base font-medium mt-7">Posts</h2>
+      <h2 className="text-[#333333] text-base font-medium mt-14">Posts</h2>
       <div>
         <div className="mt-7">
           {posts.map((post) => (

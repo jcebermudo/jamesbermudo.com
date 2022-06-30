@@ -2,8 +2,10 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Layout from "../components/Layout";
-import Circles from "../components/Circles";
 import { basename } from "path";
+
+import base from "../public/images/projects/base.png";
+import house from "../public/house.png";
 
 export default function Home() {
   return (
@@ -39,8 +41,19 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" type="image/x-icon" href="/favicon.png"></link>
       </Head>
-      <Circles />
-      <p className="text-[#A4A3A5] text-base mt-7">
+      <div className="flex justify-center mt-14">
+        <Image
+          alt=""
+          quality="100"
+          placeholder="blur"
+          width={136}
+          height={127}
+          layout="fixed"
+          src={house}
+          className="select-none"
+        />
+      </div>
+      <p className="text-[#6A6A6A] text-base mt-7">
         I&apos;m a 15 year old designer living in Quezon City, Philippines
         currently finishing high school. I love to build software from design to
         code.
@@ -49,7 +62,7 @@ export default function Home() {
         This website is my little corner on the internet where I showcase my
         projects as well as{" "}
         <Link href="/writing">
-          <a className="text-[#D1D1D2] underline text-base duration-150 hover:text-indigo-300">
+          <a className="text-[#606060] underline text-base font-medium duration-150 hover:text-[#19A1FD]">
             write
           </a>
         </Link>{" "}
@@ -61,7 +74,7 @@ export default function Home() {
           href="https://twitter.com/jcebermudo"
           target="_blank"
           rel="noreferrer"
-          className="text-[#D1D1D2] underline text-base duration-150 hover:text-indigo-300"
+          className="text-[#606060] underline text-base font-medium duration-150 hover:text-[#19A1FD]"
         >
           Twitter
         </a>
@@ -72,12 +85,12 @@ export default function Home() {
           target="_blank"
           rel="noreferrer"
           href="mailto:bermudo.elumba@gmail.com"
-          className="group text-[#D1D1D2] underline text-base duration-150 hover:text-indigo-300"
+          className="group text-[#606060] underline text-base font-medium duration-150 hover:text-[#19A1FD]"
         >
           Email
           <span className="inline-block align-middle ml-[5px]">
             <svg
-              className="stroke-2 stroke-[#D1D1D2] duration-150 group-hover:stroke-indigo-300 group-hover:-translate-y-px group-hover:translate-x-px"
+              className="stroke-2 stroke-[#606060] duration-150 group-hover:stroke-[#19A1FD] group-hover:-translate-y-px group-hover:translate-x-px"
               width="9"
               height="9"
               viewBox="0 0 11 11"
@@ -96,12 +109,12 @@ export default function Home() {
           href="https://twitter.com/jcebermudo"
           target="_blank"
           rel="noreferrer"
-          className="group text-[#D1D1D2] underline text-base duration-150 hover:text-indigo-300"
+          className="group text-[#606060] underline text-base font-medium duration-150 hover:text-[#19A1FD]"
         >
           Twitter
           <span className="inline-block align-middle ml-[5px]">
             <svg
-              className="stroke-2 stroke-[#D1D1D2] duration-150 group-hover:stroke-indigo-300 group-hover:-translate-y-px group-hover:translate-x-px"
+              className="stroke-2 stroke-[#606060] duration-150 group-hover:stroke-[#19A1FD] group-hover:-translate-y-px group-hover:translate-x-px"
               width="9"
               height="9"
               viewBox="0 0 11 11"
@@ -120,12 +133,12 @@ export default function Home() {
           href="https://github.com/jcebermudo"
           target="_blank"
           rel="noreferrer"
-          className="group text-[#D1D1D2] underline text-base duration-150 hover:text-indigo-300"
+          className="group text-[#606060] underline text-base font-medium duration-150 hover:text-[#19A1FD]"
         >
           GitHub
           <span className="inline-block align-middle ml-[5px]">
             <svg
-              className="stroke-2 stroke-[#D1D1D2] duration-150 group-hover:stroke-indigo-300 group-hover:-translate-y-px group-hover:translate-x-px"
+              className="stroke-2 stroke-[#606060] duration-150 group-hover:stroke-[#19A1FD] group-hover:-translate-y-px group-hover:translate-x-px"
               width="9"
               height="9"
               viewBox="0 0 11 11"
@@ -142,25 +155,26 @@ export default function Home() {
         </a>
       </div>
       <hr className="mt-7 border-[#767677] border-dashed opacity-30" />
-      <h2 className="text-[#D1D1D2] text-base font-semibold mt-7">Projects</h2>
+      <h2 className="text-[#606060] text-base font-medium mt-7">Projects</h2>
       <div className="flex mt-7">
         <div>
           <Image
-            alt="Base Icon"
+            alt=""
             quality="100"
-            width={130}
-            height={130}
+            placeholder="blur"
+            width={120}
+            height={120}
             layout="fixed"
-            src="/images/projects/base.png"
+            src={base}
             className="border rounded-md select-none"
           />
         </div>
         <div className="ml-7 place-self-center">
-          <h2 className="text-[#D1D1D2] text-base font-semibold">Base</h2>
-          <p className="text-[#A4A3A5] text-base mt-2.5">
+          <h2 className="text-[#606060] text-base font-medium">Base</h2>
+          <p className="text-[#6A6A6A] text-base mt-2.5">
             A playful moodboard app.
           </p>
-          <p className="text-[#494849] text-base mt-2.5">Releasing soon</p>
+          <p className="text-[#A1A1A1] text-base mt-2.5">Releasing soon</p>
         </div>
       </div>
     </>

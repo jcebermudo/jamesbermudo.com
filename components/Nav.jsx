@@ -18,8 +18,8 @@ const Nav = () => {
                 <a
                   className={
                     asPath === "/"
-                      ? "text-[#D1D1D2] text-base duration-150 hover:text-indigo-300 select-none"
-                      : "text-[#767677] text-base duration-150 hover:text-indigo-300 select-none"
+                      ? "text-[#606060] text-base duration-150 hover:text-[#19A1FD] select-none"
+                      : "text-[#A1A1A1] text-base duration-150 hover:text-[#19A1FD] select-none"
                   }
                 >
                   index
@@ -31,8 +31,8 @@ const Nav = () => {
                 <a
                   className={
                     asPath === "/writing"
-                      ? "text-[#D1D1D2] text-base duration-150 hover:text-indigo-300 select-none"
-                      : "text-[#767677] text-base duration-150 hover:text-indigo-300 select-none"
+                      ? "text-[#606060] text-base duration-150 hover:text-[#19A1FD] first-letter:select-none"
+                      : "text-[#A1A1A1] text-base duration-150 hover:text-[#19A1FD] select-none"
                   }
                 >
                   writing

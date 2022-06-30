@@ -21,10 +21,10 @@ function Post({ data, content }) {
       </Head>
       <div className="mt-14">
         <Link href="/writing">
-          <a className="group text-[#D1D1D2] text-base duration-150 hover:text-indigo-300">
+          <a className="group text-[#606060] text-base duration-150 hover:text-[#19A1FD]">
             <span className="inline-block align-top mr-[5px]">
               <svg
-                className="stroke-2 stroke-[#D1D1D2] duration-150 group-hover:stroke-indigo-300 group-hover:-translate-y-px group-hover:-translate-x-px"
+                className="stroke-2 stroke-[#606060] duration-150 group-hover:stroke-[#19A1FD] group-hover:-translate-y-px group-hover:-translate-x-px"
                 width="9"
                 height="9"
                 viewBox="0 0 11 11"
@@ -41,15 +41,15 @@ function Post({ data, content }) {
             Go Back
           </a>
         </Link>
-        <h1 className="text-[#D1D1D2] text-base font-semibold mt-7">
+        <h1 className="text-[#606060] text-base font-medium mt-7">
           {data.title}
         </h1>
-        <time className="text-[#767677] text-base text-left font-semibold font-date italic mt-7">
+        <time className="text-[#9c9c9c] text-base text-left font-semibold font-date italic mt-7">
           Published on {data.date}
         </time>
         <div
-          className="prose prose-headings:text-[#D1D1D2] prose-headings:text-base prose-headings:font-semibold mt-7 
-      prose-p:text-[#A4A3A5] prose-p:text-base prose-a:text-[#D1D1D2] prose-a:text-base prose-a:underline prose-a:duration-150 prose-a:hover:hover:text-indigo-300"
+          className="prose prose-headings:text-[#606060] prose-headings:text-base prose-headings:font-medium mt-7 
+      prose-p:text-[#8B8B8B] prose-p:text-base prose-a:text-[#606060] prose-a:text-base prose-a:underline prose-a:duration-150 prose-a:hover:hover:text-indigo-500"
         >
           <MDXRemote {...content} />
         </div>

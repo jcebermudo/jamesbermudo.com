@@ -15,7 +15,7 @@ function PostLink({ title, date, description, slug }) {
               {title}
             </a>
           </Link>
-          <p className="text-[#6A6A6A] mt-2.5">{description}</p>
+          <p className="text-[#8B8B8B] mt-2.5">{description}</p>
         </div>
       </div>
     </div>

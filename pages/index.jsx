@@ -53,7 +53,7 @@ export default function Home() {
           className="select-none"
         />
       </div>
-      <p className="text-[#6A6A6A] text-base mt-7">
+      <p className="text-[#8B8B8B] text-base mt-7">
         I&apos;m a 15 year old designer living in Quezon City, Philippines
         currently finishing high school. I love to build software from design to
         code.
@@ -62,7 +62,7 @@ export default function Home() {
         This website is my little corner on the internet where I showcase my
         projects as well as{" "}
         <Link href="/writing">
-          <a className="text-[#606060] underline text-base font-medium duration-150 hover:text-[#19A1FD]">
+          <a className="text-[#606060] underline text-base duration-150 hover:text-[#19A1FD]">
             write
           </a>
         </Link>{" "}
@@ -74,7 +74,7 @@ export default function Home() {
           href="https://twitter.com/jcebermudo"
           target="_blank"
           rel="noreferrer"
-          className="text-[#606060] underline text-base font-medium duration-150 hover:text-[#19A1FD]"
+          className="text-[#606060] underline text-base duration-150 hover:text-[#19A1FD]"
         >
           Twitter
         </a>
@@ -171,7 +171,7 @@ export default function Home() {
         </div>
         <div className="ml-7 place-self-center">
           <h2 className="text-[#606060] text-base font-medium">Base</h2>
-          <p className="text-[#6A6A6A] text-base mt-2.5">
+          <p className="text-[#8B8B8B] text-base mt-2.5">
             A playful moodboard app.
           </p>
           <p className="text-[#A1A1A1] text-base mt-2.5">Releasing soon</p>

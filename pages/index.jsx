@@ -155,7 +155,7 @@ export default function Home() {
         </a>
       </div>
       <hr className="mt-7 border-[#767677] border-dashed opacity-30" />
-      <h2 className="text-[#333333] text-base font-medium mt-7">Projects</h2>
+      <h2 className="text-[#333333] text-base font-semibold mt-7">Projects</h2>
       <div className="flex mt-7">
         <div>
           <Image
@@ -170,7 +170,7 @@ export default function Home() {
           />
         </div>
         <div className="ml-7 place-self-center">
-          <h2 className="text-[#333333] text-base font-medium">Base</h2>
+          <h2 className="text-[#333333] text-base font-semibold">Base</h2>
           <p className="text-[#575757] text-base mt-2.5">
             A playful moodboard app.
           </p>

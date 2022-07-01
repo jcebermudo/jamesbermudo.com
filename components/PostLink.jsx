@@ -5,7 +5,7 @@ function PostLink({ title, date, description, slug }) {
     <div>
       <div className="group sm:grid sm:grid-cols-3 mb-7">
         <div className="mb-4 sm:mb-0">
-          <h2 className="text-[#A1A1A1] text-base text-left font-semibold font-date italic">
+          <h2 className="text-[#A1A1A1] text-base text-left font-['Newsreader'] font-bold italic">
             {date}
           </h2>
         </div>

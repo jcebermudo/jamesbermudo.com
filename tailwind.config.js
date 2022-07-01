@@ -1,32 +1,27 @@
 module.exports = {
-  darkmode: 'class',
+  darkmode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
-      'animation': {
-            'text':'text 3s ease infinite',
+      animation: {
+        text: "text 3s ease infinite",
+      },
+      keyframes: {
+        text: {
+          "0%, 100%": {
+            "background-size": "200% 200%",
+            "background-position": "left center",
+          },
+          "50%": {
+            "background-size": "200% 200%",
+            "background-position": "right center",
+          },
         },
-        'keyframes': {
-            'text': {
-                '0%, 100%': {
-                   'background-size':'200% 200%',
-                    'background-position': 'left center'
-                },
-                '50%': {
-                   'background-size':'200% 200%',
-                    'background-position': 'right center'
-                }
-            },
-        }
-    },
-    fontFamily: {
-      'date': 'Roboto Slab, serif',
+      },
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
-}
+  plugins: [require("@tailwindcss/typography")],
+};

@@ -44,8 +44,8 @@ function Post({ data, content }) {
         <h1 className="text-[#333333] text-base font-semibold mt-7">
           {data.title}
         </h1>
-        <time className="text-[#A1A1A1] text-base text-left font-semibold font-date italic mt-7">
-          Published on {data.date}
+        <time className="text-[#A1A1A1] text-base text-left font-['Newsreader'] font-bold italic mt-7">
+          {data.date}
         </time>
         <div
           className="prose prose-headings:text-[#606060] prose-headings:text-base prose-headings:font-medium mt-7 

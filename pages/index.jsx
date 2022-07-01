@@ -54,9 +54,12 @@ export default function Home() {
         />
       </div>
       <p className="text-[#575757] text-base mt-14">
-        I&apos;m a 15 year old designer living in Quezon City, Philippines
-        currently finishing high school. I love to build software from design to
-        code.
+        I&apos;m a 15 year old{" "}
+        <span className="font-['Newsreader'] font-semibold italic text-lg">
+          designer
+        </span>{" "}
+        living in Quezon City, Philippines currently finishing high school. I
+        love to build software from design to code.
         <br />
         <br />
         This website is my little corner on the internet where I showcase my

@@ -5,7 +5,6 @@ import Layout from "../components/Layout";
 import { basename } from "path";
 
 import swirl from "../public/images/projects/swirl.png";
-import house from "../public/house.png";
 
 export default function Home() {
   return (
@@ -41,18 +40,6 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" type="image/x-icon" href="/favicon.png"></link>
       </Head>
-      <div className="flex justify-center mt-14">
-        <Image
-          alt=""
-          quality="100"
-          placeholder="blur"
-          width={136}
-          height={127}
-          layout="fixed"
-          src={house}
-          className="select-none"
-        />
-      </div>
       <p className="text-[#575757] text-base mt-14">
         I&apos;m a 15 year old{" "}
         <span className="font-['Newsreader'] font-semibold italic text-lg">

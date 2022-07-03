@@ -5,8 +5,6 @@ import Layout from "../../components/Layout";
 import getPosts from "../../helpers/getPosts";
 import PostLink from "../../components/PostLink";
 
-import typewriter from "../../public/typewriter.png";
-
 export default function Blog({ posts }) {
   return (
     <>
@@ -38,18 +36,6 @@ export default function Blog({ posts }) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" type="image/x-icon" href="/favicon.png"></link>
       </Head>
-      <div className="flex justify-center mt-14">
-        <Image
-          alt=""
-          quality="100"
-          placeholder="blur"
-          width={91}
-          height={122}
-          layout="fixed"
-          src={typewriter}
-          className="select-none"
-        />
-      </div>
       <h2 className="text-[#333333] text-base font-semibold mt-14">Posts</h2>
       <div>
         <div className="mt-7">

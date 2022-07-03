@@ -41,34 +41,23 @@ export default function Home() {
         <link rel="icon" type="image/x-icon" href="/favicon.png"></link>
       </Head>
       <p className="text-[#575757] text-base mt-14">
-        I&apos;m a 15 year old{" "}
+        Hello, I&apos;m a 15 year old{" "}
         <span className="font-['Newsreader'] font-semibold italic text-lg">
           designer
         </span>{" "}
-        living in Quezon City, Philippines currently finishing high school. I
-        love to build software from design to code.
+        living in Quezon City, Philippines who&apos;s currently finishing
+        highschool. Building beautiful things is what I&apos;m passionate about.
+        From digital products to experimental tools.
         <br />
         <br />
-        This website is my little corner on the internet where I showcase my
-        projects as well as{" "}
+        This website is the home of all my work and I&apos;m planning to
+        maintain this for as long as I can. I also{" "}
         <Link href="/writing">
           <a className="underline text-base duration-150 hover:text-[#19A1FD]">
             write
           </a>
         </Link>{" "}
-        about my thoughts and experiences.
-        <br />
-        <br />
-        If you&apos;d like to chat, send me a DM on{" "}
-        <a
-          href="https://twitter.com/jcebermudo"
-          target="_blank"
-          rel="noreferrer"
-          className="underline text-base duration-150 hover:text-[#19A1FD]"
-        >
-          Twitter
-        </a>
-        , I&apos;m always active.
+        a lot about design, art, and software.
       </p>
       <div className="flex space-x-4 mt-7">
         <a

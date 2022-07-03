@@ -4,7 +4,7 @@ import Image from "next/image";
 import Layout from "../components/Layout";
 import { basename } from "path";
 
-import base from "../public/images/projects/base.png";
+import swirl from "../public/images/projects/swirl.png";
 import house from "../public/house.png";
 
 export default function Home() {
@@ -168,15 +168,13 @@ export default function Home() {
             width={120}
             height={120}
             layout="fixed"
-            src={base}
+            src={swirl}
             className="border rounded-md select-none"
           />
         </div>
         <div className="ml-7 place-self-center">
-          <h2 className="text-[#333333] text-base font-semibold">Base</h2>
-          <p className="text-[#575757] text-base mt-2.5">
-            A playful moodboard app.
-          </p>
+          <h2 className="text-[#333333] text-base font-semibold">Swirl</h2>
+          <p className="text-[#575757] text-base mt-2.5">A visual canvas.</p>
           <p className="text-[#A1A1A1] text-base mt-2.5">Releasing soon</p>
         </div>
       </div>

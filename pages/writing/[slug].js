@@ -17,7 +17,7 @@ function Post({ data, content }) {
         <meta property="og:description" content={data.description} />
         <meta property="og:site_name" content="James Bermudo" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="icon" type="image/x-icon" href="/favicon.png"></link>
+        <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
       </Head>
       <div className="mt-14">
         <Link href="/writing">

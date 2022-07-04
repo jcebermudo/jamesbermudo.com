@@ -34,11 +34,26 @@ export default function Blog({ posts }) {
         <meta name="twitter:creator" content="@jcebermudo" />
         <meta property="twitter:image" content="/writing.png" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="icon" type="image/x-icon" href="/favicon.png"></link>
+        <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
       </Head>
       <h2 className="text-[#333333] text-base font-semibold mt-14">Posts</h2>
+      <p className="text-[#575757] text-base mt-7">
+        I see writing as an expression of love to the things I’m passionate
+        about. I mostly write about design and software. Some of these articles
+        are also available on{" "}
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://bermudo.medium.com/"
+          className="underline text-base duration-150 hover:text-[#19A1FD]"
+        >
+          Medium
+        </a>{" "}
+        as I see these to be potentially helpful to many people.
+      </p>
+      <hr className="border-[#767677] border-dashed opacity-30 mt-7" />
       <div>
-        <div className="mt-7">
+        <div className="mt-14">
           {posts.map((post) => (
             <PostLink
               key={post.slug}

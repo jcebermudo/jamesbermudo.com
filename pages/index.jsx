@@ -38,7 +38,7 @@ export default function Home() {
         <meta name="twitter:creator" content="@jcebermudo" />
         <meta property="twitter:image" content="/index.png" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="icon" type="image/x-icon" href="/favicon.png"></link>
+        <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
       </Head>
       <p className="text-[#575757] text-base mt-14">
         Hello, I&apos;m a 15 year old{" "}

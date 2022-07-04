@@ -48,8 +48,8 @@ function Post({ data, content }) {
           {data.date}
         </time>
         <div
-          className="prose prose-headings:text-[#606060] prose-headings:text-base prose-headings:font-medium mt-7 
-      prose-p:text-[#8B8B8B] prose-p:text-base prose-a:text-[#606060] prose-a:text-base prose-a:underline prose-a:duration-150 prose-a:hover:hover:text-indigo-500"
+          className="prose prose-headings:text-[#333333] prose-headings:text-base prose-headings:font-semibold mt-7 
+     prose-p:text-[#575757] prose-p:text-base prose-a:text-[#606060] prose-a:text-base prose-a:underline prose-a:duration-150 hover:prose-a:text-[#19A1FD]"
         >
           <MDXRemote {...content} />
         </div>

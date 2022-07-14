@@ -49,8 +49,7 @@ export default function Home() {
         highschool.
         <br />
         <br />
-        This website is the home of all my work and I&apos;m planning to
-        maintain this for as long as I can. I also{" "}
+        This website is the home of all my work. I also{" "}
         <Link href="/writing">
           <a className="underline text-base duration-150 hover:text-[#19A1FD]">
             write

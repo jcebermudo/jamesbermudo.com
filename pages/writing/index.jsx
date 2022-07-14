@@ -39,17 +39,7 @@ export default function Blog({ posts }) {
       <h2 className="text-[#333333] text-base font-semibold mt-14">Posts</h2>
       <p className="text-[#575757] text-base mt-7">
         I see writing as an expression of love to the things I’m passionate
-        about. I mostly write about design and software. Some of these articles
-        are also available on{" "}
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://bermudo.medium.com/"
-          className="underline text-base duration-150 hover:text-[#19A1FD]"
-        >
-          Medium
-        </a>{" "}
-        as I see these to be potentially helpful to many people.
+        about. I mostly write about design and software.
       </p>
       <hr className="border-[#767677] border-dashed opacity-30 mt-7" />
       <div>

@@ -46,8 +46,7 @@ export default function Home() {
           designer
         </span>{" "}
         living in Quezon City, Philippines who&apos;s currently finishing
-        highschool. Building beautiful things is what I&apos;m passionate about.
-        From digital products to experimental tools.
+        highschool.
         <br />
         <br />
         This website is the home of all my work and I&apos;m planning to

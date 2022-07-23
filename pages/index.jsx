@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <SEO />
       <p className="text-[#575757] text-base mt-14">
-        I&apos;m a 16 year old{" "}
+        I&apos;m a 15 year old{" "}
         <span className="font-['Newsreader'] font-semibold italic text-lg">
           designer
         </span>{" "}

@@ -1,45 +1,14 @@
-import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Layout from "../components/Layout";
 import { basename } from "path";
 
-import swirl from "../public/images/projects/swirl.png";
+import SEO from "../components/seo";
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <meta charSet="utf-8" />
-        <title>James Bermudo</title>
-        <meta name="title" content="James Bermudo" />
-        <meta name="robots" content="index,follow" />
-        <meta
-          name="description"
-          content="A designer living in Quezon City, Philippines."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="James Bermudo" />
-        <meta
-          property="og:description"
-          content="A designer living in Quezon City, Philippines."
-        />
-        <meta property="og:site_name" content="James Bermudo" />
-        <meta property="og:url" content="https://www.bermudo.me" />
-        <meta property="og:image" content="/index.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="James Bermudo" />
-        <meta
-          name="twitter:description"
-          content="A designer living in Quezon City, Philippines."
-        />
-        <meta name="twitter:site" content="@jcebermudo" />
-        <meta name="twitter:url" content="https://www.bermudo.me" />
-        <meta name="twitter:creator" content="@jcebermudo" />
-        <meta property="twitter:image" content="/index.png" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
-      </Head>
+      <SEO />
       <p className="text-[#575757] text-base mt-14">
         I&apos;m a 16 year old{" "}
         <span className="font-['Newsreader'] font-semibold italic text-lg">
@@ -49,13 +18,17 @@ export default function Home() {
         highschool.
         <br />
         <br />
-        This website is the home of all my work. I also{" "}
+        Occasionally, I direct motion graphic films where I&apos;m fortunate
+        enough to be featured by Adobe.
+        <br />
+        <br />
+        This website is the home of all my projects and{" "}
         <Link href="/writing">
           <a className="underline text-base duration-150 hover:text-[#19A1FD]">
-            write
+            writing
           </a>
-        </Link>{" "}
-        a lot about design, art, and software.
+        </Link>
+        {"."}
       </p>
       <div className="flex space-x-4 mt-7">
         <a
@@ -133,25 +106,6 @@ export default function Home() {
       </div>
       <hr className="mt-7 border-[#767677] border-dashed opacity-30" />
       <h2 className="text-[#333333] text-base font-semibold mt-7">Projects</h2>
-      <div className="flex mt-7">
-        <div>
-          <Image
-            alt=""
-            quality="100"
-            placeholder="blur"
-            width={120}
-            height={120}
-            layout="fixed"
-            src={swirl}
-            className="border rounded-md select-none"
-          />
-        </div>
-        <div className="ml-7 place-self-center">
-          <h2 className="text-[#333333] text-base font-semibold">Swirl</h2>
-          <p className="text-[#575757] text-base mt-2.5">A visual canvas.</p>
-          <p className="text-[#A1A1A1] text-base mt-2.5">Releasing soon</p>
-        </div>
-      </div>
     </>
   );
 }

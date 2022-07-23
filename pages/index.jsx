@@ -41,7 +41,7 @@ export default function Home() {
         <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
       </Head>
       <p className="text-[#575757] text-base mt-14">
-        I&apos;m a 15 year old{" "}
+        I&apos;m a 16 year old{" "}
         <span className="font-['Newsreader'] font-semibold italic text-lg">
           designer
         </span>{" "}
@@ -49,13 +49,12 @@ export default function Home() {
         highschool.
         <br />
         <br />
-        This website is the home of all my work. I also{" "}
+        This website is the home of all my projects and{" "}
         <Link href="/writing">
           <a className="underline text-base duration-150 hover:text-[#19A1FD]">
-            write
+            writing
           </a>
-        </Link>{" "}
-        a lot about design, art, and software.
+        </Link>{"."}
       </p>
       <div className="flex space-x-4 mt-7">
         <a

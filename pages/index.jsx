@@ -3,19 +3,31 @@ import Link from "next/link";
 import Image from "next/image";
 import Layout from "../components/Layout";
 import LinkText from "../components/link";
-import { basename } from "path";
+
+import bobby from "../public/images/general/bobby.png";
 
 export default function Home() {
   return (
     <>
       <SEO />
+      <div className="mt-14 select-none flex justify-center">
+        <Image
+          alt="bobby"
+          quality="100"
+          placeholder="blur"
+          width={321}
+          height={189}
+          layout="fixed"
+          src={bobby}
+        />
+      </div>
       <p className="text-[#575757] text-base mt-14">
         I&apos;m a 16 year old{" "}
         <span className="font-['Newsreader'] font-semibold italic text-lg">
           designer
         </span>{" "}
         living in Quezon City, Philippines who&apos;s currently finishing
-        highschool.
+        highschool. I love to make lovely internet things.
         <br />
         <br />
         This website is the home of all my projects and{" "}

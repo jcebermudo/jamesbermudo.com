@@ -2,9 +2,8 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import Layout from "../components/Layout";
+import LinkText from "../components/link";
 import { basename } from "path";
-
-import swirl from "../public/images/projects/swirl.png";
 
 export default function Home() {
   return (
@@ -54,103 +53,16 @@ export default function Home() {
           <a className="underline text-base duration-150 hover:text-[#19A1FD]">
             writing
           </a>
-        </Link>{"."}
+        </Link>
+        {"."}
       </p>
       <div className="flex space-x-4 mt-7">
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="mailto:bermudo.elumba@gmail.com"
-          className="group text-[#575757] underline text-base duration-150 hover:text-[#19A1FD]"
-        >
-          Email
-          <span className="inline-block align-middle ml-[5px]">
-            <svg
-              className="stroke-1 stroke-[#575757] duration-150 group-hover:stroke-[#19A1FD] group-hover:-translate-y-px group-hover:translate-x-px"
-              width="9"
-              height="9"
-              viewBox="0 0 11 11"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1 10L10 1M10 1H3M10 1V8"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </span>
-        </a>
-        <a
-          href="https://twitter.com/jcebermudo"
-          target="_blank"
-          rel="noreferrer"
-          className="group text-[#575757] underline text-base duration-150 hover:text-[#19A1FD]"
-        >
-          Twitter
-          <span className="inline-block align-middle ml-[5px]">
-            <svg
-              className="stroke-1 stroke-[#575757] duration-150 group-hover:stroke-[#19A1FD] group-hover:-translate-y-px group-hover:translate-x-px"
-              width="9"
-              height="9"
-              viewBox="0 0 11 11"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1 10L10 1M10 1H3M10 1V8"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </span>
-        </a>
-        <a
-          href="https://github.com/jcebermudo"
-          target="_blank"
-          rel="noreferrer"
-          className="group text-[#575757] underline text-base duration-150 hover:text-[#19A1FD]"
-        >
-          GitHub
-          <span className="inline-block align-middle ml-[5px]">
-            <svg
-              className="stroke-1 stroke-[#575757] duration-150 group-hover:stroke-[#19A1FD] group-hover:-translate-y-px group-hover:translate-x-px"
-              width="9"
-              height="9"
-              viewBox="0 0 11 11"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1 10L10 1M10 1H3M10 1V8"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </span>
-        </a>
+        <LinkText text="Email" link="mailto:bermudo.elumba@gmail.com" />
+        <LinkText text="Twitter" link="https://twitter.com/jcebermudo" />
+        <LinkText text="GitHub" link="https://github.com/jcebermudo" />
       </div>
       <hr className="mt-7 border-[#767677] border-dashed opacity-30" />
       <h2 className="text-[#333333] text-base font-semibold mt-7">Projects</h2>
-      <div className="flex mt-7">
-        <div>
-          <Image
-            alt=""
-            quality="100"
-            placeholder="blur"
-            width={120}
-            height={120}
-            layout="fixed"
-            src={swirl}
-            className="border rounded-md select-none"
-          />
-        </div>
-        <div className="ml-7 place-self-center">
-          <h2 className="text-[#333333] text-base font-semibold">Swirl</h2>
-          <p className="text-[#575757] text-base mt-2.5">A visual canvas.</p>
-          <p className="text-[#A1A1A1] text-base mt-2.5">Releasing soon</p>
-        </div>
-      </div>
     </>
   );
 }

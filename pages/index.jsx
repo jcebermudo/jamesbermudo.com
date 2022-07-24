@@ -1,4 +1,4 @@
-import Head from "next/head";
+import SEO from "../components/seo";
 import Link from "next/link";
 import Image from "next/image";
 import Layout from "../components/Layout";
@@ -8,37 +8,7 @@ import { basename } from "path";
 export default function Home() {
   return (
     <>
-      <Head>
-        <meta charSet="utf-8" />
-        <title>James Bermudo</title>
-        <meta name="title" content="James Bermudo" />
-        <meta name="robots" content="index,follow" />
-        <meta
-          name="description"
-          content="A designer living in Quezon City, Philippines."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="James Bermudo" />
-        <meta
-          property="og:description"
-          content="A designer living in Quezon City, Philippines."
-        />
-        <meta property="og:site_name" content="James Bermudo" />
-        <meta property="og:url" content="https://www.bermudo.me" />
-        <meta property="og:image" content="/index.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="James Bermudo" />
-        <meta
-          name="twitter:description"
-          content="A designer living in Quezon City, Philippines."
-        />
-        <meta name="twitter:site" content="@jcebermudo" />
-        <meta name="twitter:url" content="https://www.bermudo.me" />
-        <meta name="twitter:creator" content="@jcebermudo" />
-        <meta property="twitter:image" content="/index.png" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico"></link>
-      </Head>
+      <SEO />
       <p className="text-[#575757] text-base mt-14">
         I&apos;m a 16 year old{" "}
         <span className="font-['Newsreader'] font-semibold italic text-lg">

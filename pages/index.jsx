@@ -10,14 +10,14 @@ export default function Home() {
   return (
     <>
       <SEO />
-      <div className="mt-14 select-none flex justify-center">
+      <div className="mt-14 flex justify-center select-none pointer-events-none">
         <Image
           alt="bobby"
           quality="100"
           placeholder="blur"
-          width={321}
-          height={189}
-          layout="fixed"
+          width={274}
+          height={161}
+          layout="intrinsic"
           src={bobby}
         />
       </div>

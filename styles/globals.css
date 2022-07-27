@@ -4,26 +4,14 @@
 
 @font-face {
   font-family: "Inter";
-  src: url(/fonts/inter.var.woff2) format("woff2");
-  font-weight: normal;
   font-style: normal;
-  font-display: optional;
-}
-
-@font-face {
-  font-family: "Newsreader", serif;
-  src: url(/fonts/Newsreader-VariableFont_opsz,wght.woff) format("woff");
   font-weight: normal;
-  font-style: normal;
   font-display: optional;
+  src: url("/public/fonts/Inter.var.woff2") format("woff2");
 }
 
 html,
 body {
-  /*font-family: "Inter", sans-serif, -system-ui;*/
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
   background-color: #ececec;
   margin: 0;
   padding: 0;

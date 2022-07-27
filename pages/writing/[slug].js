@@ -31,10 +31,10 @@ function Post({ data, content }) {
             Go Back
           </a>
         </Link>
-        <h1 className="text-[#333333] text-base font-semibold mt-7">
+        <h1 className="text-[#333333] font-['Newsreader'] font-extrabold text-lg mt-7">
           {data.title}
         </h1>
-        <time className="text-[#A1A1A1] text-base text-left font-['Newsreader'] font-bold italic mt-7">
+        <time className="text-[#A1A1A1] text-left font-['Newsreader'] font-extrabold italic mt-7">
           {data.date}
         </time>
         <div

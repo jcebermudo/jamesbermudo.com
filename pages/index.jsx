@@ -21,9 +21,9 @@ export default function Home() {
           src={bobby}
         />
       </div>
-      <p className="text-[#575757] text-base mt-14">
+      <p className="text-[#575757] mt-14">
         I&apos;m a 16 year old{" "}
-        <span className="font-['Newsreader'] font-semibold italic text-lg">
+        <span className="font-['Newsreader'] font-bold italic text-lg">
           designer
         </span>{" "}
         living in Quezon City, Philippines who&apos;s currently finishing
@@ -32,9 +32,7 @@ export default function Home() {
         <br />
         This website is the home of all my projects and{" "}
         <Link href="/writing">
-          <a className="underline text-base duration-150 hover:text-[#19A1FD]">
-            writing
-          </a>
+          <a className="underline duration-150 hover:text-[#19A1FD]">writing</a>
         </Link>
         {"."}
       </p>
@@ -44,7 +42,9 @@ export default function Home() {
         <LinkText text="GitHub" link="https://github.com/jcebermudo" />
       </div>
       <hr className="mt-7 border-[#767677] border-dashed opacity-30" />
-      <h2 className="text-[#333333] text-base font-semibold mt-7">Projects</h2>
+      <h2 className="text-[#333333] font-['Newsreader'] font-extrabold text-lg mt-7">
+        Projects
+      </h2>
     </>
   );
 }

@@ -23,11 +23,9 @@ export default function Home() {
       </div>
       <p className="text-[#575757] mt-14">
         I&apos;m a 16 year old{" "}
-        <span className="font-['Newsreader'] font-bold italic text-lg">
-          designer
-        </span>{" "}
-        living in Quezon City, Philippines who&apos;s currently finishing
-        highschool. I love to make beautiful internet things.
+        <span className="font-serif font-bold italic">designer</span> living in
+        Quezon City, Philippines who&apos;s currently finishing highschool. I
+        love to make beautiful internet things.
         <br />
         <br />
         This website is the home of all my projects and{" "}
@@ -42,7 +40,7 @@ export default function Home() {
         <LinkText text="GitHub" link="https://github.com/jcebermudo" />
       </div>
       <hr className="mt-7 border-[#767677] border-dashed opacity-30" />
-      <h2 className="text-[#333333] font-['Newsreader'] font-extrabold text-lg mt-7">
+      <h2 className="text-[#333333] font-serif font-extrabold text-lg mt-7">
         Projects
       </h2>
     </>

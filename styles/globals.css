@@ -5,9 +5,17 @@
 @font-face {
   font-family: "Inter";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-display: optional;
-  src: url("/public/fonts/Inter.var.woff2") format("woff2");
+  src: url("/fonts/Inter.var.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 700;
+  font-display: optional;
+  src: url("/fonts/Lora-VariableFont_wght.ttf");
 }
 
 html,

@@ -11,6 +11,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"],
+        serif: ["Lora", "serif"],
       },
       keyframes: {
         text: {

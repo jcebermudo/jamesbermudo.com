@@ -25,7 +25,7 @@ export default function Home() {
         I&apos;m a 16 year old{" "}
         <span className="font-serif font-bold italic">designer</span> living in
         Quezon City, Philippines who&apos;s currently finishing highschool. I
-        love to make beautiful internet things.
+        love to craft beautiful internet things.
         <br />
         <br />
         This website is the home of all my projects and{" "}

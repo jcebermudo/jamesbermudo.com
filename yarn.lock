@@ -100,6 +100,11 @@
   "resolved" "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz"
   "version" "1.2.1"
 
+"@ibm/plex@^6.0.2":
+  "integrity" "sha512-0lBo4ju7/6B58cxmACCPVEGt9xjQ8+3lggRrW7pJOWxKAFsQ21whifwES5q3eJ5wDfL3QlsvMF4YXnOQPYaNdQ=="
+  "resolved" "https://registry.npmjs.org/@ibm/plex/-/plex-6.0.2.tgz"
+  "version" "6.0.2"
+
 "@jridgewell/gen-mapping@^0.3.0":
   "integrity" "sha512-mh65xKQAzI6iBcFzwv28KVWSmCkdRBWoOh+bYQGW3+6OZvbbN3TqMGo5hqYxQniRcH9F2VZIoJCm4pa3BPDK/A=="
   "resolved" "https://registry.npmjs.org/@jridgewell/gen-mapping/-/gen-mapping-0.3.2.tgz"

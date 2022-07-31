@@ -4,7 +4,7 @@ import Image from "next/image";
 import Layout from "../components/Layout";
 import LinkText from "../components/link";
 
-import bobby from "../public/images/general/bobby.png";
+import shapes from "../public/images/general/shape.svg";
 
 export default function Home() {
   return (
@@ -12,13 +12,12 @@ export default function Home() {
       <SEO />
       <div className="mt-14 flex justify-center select-none pointer-events-none">
         <Image
-          alt="bobby"
+          alt="shape"
           quality="100"
-          placeholder="blur"
-          width={274}
-          height={161}
+          width={250}
+          height={220}
           layout="intrinsic"
-          src={bobby}
+          src={shapes}
         />
       </div>
       <p className="text-[#575757] mt-14">

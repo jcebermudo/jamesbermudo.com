@@ -2,7 +2,7 @@ import Head from "next/head";
 
 export default function SEO({
   title = "James Bermudo",
-  og = "og.png",
+  og = "main.png",
   description = "A designer living in Quezon City, Philippines.",
 }) {
   const siteTitle = "James Bermudo";

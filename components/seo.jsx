@@ -13,6 +13,7 @@ export default function SEO({
       <meta name="robots" content="index,follow" />
       <title>{`${title}`}</title>
       <meta name="description" content={description} />
+      <meta name="keywords" content="james bermudo, designer, blog" />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
@@ -43,7 +44,7 @@ export default function SEO({
         rel="preload"
         href="/fonts/ibm-plex-sans-var.woff2"
         as="font"
-        crossOrigin=""
+        crossOrigin="anonymous"
         type="font/woff2"
       />
     </Head>

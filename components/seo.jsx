@@ -38,6 +38,14 @@ export default function SEO({
         rel="icon"
         type="image/x-icon"
       />
+
+      <link
+        rel="preload"
+        href="/fonts/ibm-plex-sans-var.woff2"
+        as="font"
+        crossOrigin=""
+        type="font/woff2"
+      />
     </Head>
   );
 }

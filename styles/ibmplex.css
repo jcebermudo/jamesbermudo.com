@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: optional;
+  src: url(https://res.cloudinary.com/dbtfomf5n/raw/upload/v1659355170/ibm-plex-sans-var_muumfa.woff2)
+    format("woff2");
+}

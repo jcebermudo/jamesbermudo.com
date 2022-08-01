@@ -1,3 +1,5 @@
+const { spacing, fontFamily } = require("tailwindcss/defaultTheme");
+
 module.exports = {
   darkmode: "class",
   content: [
@@ -6,23 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      animation: {
-        text: "text 3s ease infinite",
-      },
       fontFamily: {
-        sans: ["IBM Plex Sans"],
-      },
-      keyframes: {
-        text: {
-          "0%, 100%": {
-            "background-size": "200% 200%",
-            "background-position": "left center",
-          },
-          "50%": {
-            "background-size": "200% 200%",
-            "background-position": "right center",
-          },
-        },
+        sans: ["IBM Plex Sans", ...fontFamily.sans],
+        serif: ["IBM Plex Serif", ...fontFamily.serif],
       },
     },
   },

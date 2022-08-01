@@ -1,11 +1,8 @@
+@import "./ibmplex.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@font-face {
-  font-family: "IBM Plex Sans";
-  src: url(/public/fonts/IBMPlexSans-Regular.woff2);
-}
 
 html,
 body {

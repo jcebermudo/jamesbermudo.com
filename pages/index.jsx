@@ -26,7 +26,7 @@ export default function Home() {
         <LinkText text="GitHub" link="https://github.com/jcebermudo" />
       </div>
       <hr className="mt-7 border-[#767677] border-dashed opacity-30" />
-      <h2 className="text-[#333333] font-semibold mt-7">Projects</h2>
+      <h2 className="text-[#333333] font-semibold mt-7">Select Projects</h2>
     </>
   );
 }

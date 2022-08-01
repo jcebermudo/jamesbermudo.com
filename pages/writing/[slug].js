@@ -31,7 +31,7 @@ function Post({ data, content }) {
             Go Back
           </a>
         </Link>
-        <h1 className="font-serif font-semibold mt-7">{data.title}</h1>
+        <h1 className="font-semibold mt-7">{data.title}</h1>
         <time className="text-[#A1A1A1] text-left font-semibold italic mt-7">
           {data.date}
         </time>

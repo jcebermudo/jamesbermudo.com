@@ -11,7 +11,7 @@ function PostLink({ title, date, description, slug }) {
         </div>
         <div className="sm:col-span-2">
           <Link href="writing/[slug]" as={`writing/${slug}`}>
-            <a className="text-[#333333] font-serif font-semibold duration-150 underline hover:text-[#19A1FD] visited:text-[#a0a0a0]">
+            <a className="text-[#333333] font-semibold duration-150 underline hover:text-[#19A1FD] visited:text-[#a0a0a0]">
               {title}
             </a>
           </Link>

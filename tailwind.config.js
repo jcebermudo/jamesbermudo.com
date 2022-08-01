@@ -9,10 +9,6 @@ module.exports = {
       animation: {
         text: "text 3s ease infinite",
       },
-      fontFamily: {
-        sans: ["IBM Plex Sans", "Helvetica Neue", "Arial", "sans-serif"],
-        serif: ["IBM Plex Serif", "Georgia", "Times", "serif"],
-      },
       keyframes: {
         text: {
           "0%, 100%": {

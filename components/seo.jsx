@@ -41,6 +41,18 @@ export default function SEO({
       />
 
       <link
+        href="https://bermudo.me/images/favicon/apple-icon-180x180.png"
+        rel="apple-touch-icon"
+        sizes="180x180"
+      />
+
+      <link
+        href="https://bermudo.me/images/favicon/apple-icon-76x76.png"
+        rel="apple-touch-icon"
+        sizes="76x76"
+      />
+
+      <link
         rel="preload"
         href="/fonts/ibm-plex-sans-var.woff2"
         as="font"

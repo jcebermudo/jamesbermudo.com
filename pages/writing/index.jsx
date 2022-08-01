@@ -13,10 +13,8 @@ export default function Blog({ posts }) {
         og="writing.png"
         description="Welcome to my digital garden."
       />
-      <h2 className="text-[#333333] font-serif font-extrabold text-lg mt-14">
-        Posts
-      </h2>
-      <p className="text-[#575757] mt-7">
+      <h2 className="font-semibold mt-14">Posts</h2>
+      <p className="mt-7">
         I see writing as an expression of love to the things I’m passionate
         about. I mostly write about design and software.
       </p>

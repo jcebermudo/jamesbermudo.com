@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "IBM Plex Sans";
+  src: url(/public/fonts/IBMPlexSans-Regular.woff2);
+}
+
 html,
 body {
+  color: #333333;
   background-color: #ececec;
   margin: 0;
   padding: 0;

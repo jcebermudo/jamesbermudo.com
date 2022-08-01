@@ -9,6 +9,9 @@ module.exports = {
       animation: {
         text: "text 3s ease infinite",
       },
+      fontFamily: {
+        sans: ["IBM Plex Sans"],
+      },
       keyframes: {
         text: {
           "0%, 100%": {

@@ -4,23 +4,11 @@ import Image from "next/image";
 import Layout from "../components/Layout";
 import LinkText from "../components/link";
 
-import shapes from "../public/images/general/shape.svg";
-
 export default function Home() {
   return (
     <>
       <SEO />
-      <div className="mt-14 flex justify-center select-none pointer-events-none">
-        <Image
-          alt="shape"
-          quality="100"
-          width={250}
-          height={220}
-          layout="intrinsic"
-          src={shapes}
-        />
-      </div>
-      <p className="text-[#575757] mt-14">
+      <p className="mt-14">
         I&apos;m a 16 year old designer living in Quezon City, Philippines
         who&apos;s currently finishing highschool. I love to craft beautiful
         internet things.
@@ -38,9 +26,7 @@ export default function Home() {
         <LinkText text="GitHub" link="https://github.com/jcebermudo" />
       </div>
       <hr className="mt-7 border-[#767677] border-dashed opacity-30" />
-      <h2 className="text-[#333333] font-serif font-extrabold text-lg mt-7">
-        Projects
-      </h2>
+      <h2 className="text-[#333333] font-semibold mt-7">Projects</h2>
     </>
   );
 }

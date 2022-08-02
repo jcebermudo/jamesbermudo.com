@@ -36,7 +36,7 @@ export default function Home() {
           </li>
         </ul>
       </div>
-      <hr className="mt-7 border-[#767677] border-dashed opacity-30" />
+      <hr className="mt-7 border-[#b4b4b4] border-dashed opacity-30" />
       <h2 className="text-[#333333] font-semibold mt-7">Select Projects</h2>
     </Layout>
   );

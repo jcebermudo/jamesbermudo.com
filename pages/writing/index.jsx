@@ -18,7 +18,7 @@ export default function Blog({ posts }) {
         I see writing as an expression of love to the things I’m passionate
         about. I mostly write about design and software.
       </p>
-      <hr className="border-[#767677] border-dashed opacity-30 mt-7" />
+      <hr className="border-[#b4b4b4] border-dashed opacity-30 mt-7" />
       <div>
         <div className="mt-14">
           {posts.map((post) => (

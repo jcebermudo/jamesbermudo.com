@@ -12,7 +12,7 @@ function Post({ data, content }) {
       <SEO title={data.title} og={data.image} description={data.description} />
       <div className="mt-14">
         <Link href="/writing">
-          <a className="group text-base duration-150 hover:text-[#19A1FD]">
+          <a className="group text-base duration-150 hover:text-[#19A1FD] select-none">
             <span className="inline-block align-top mr-[5px]">
               <svg
                 className="stroke-1 stroke-[#333333] duration-150 group-hover:stroke-[#19A1FD] group-hover:-translate-y-px group-hover:-translate-x-px"

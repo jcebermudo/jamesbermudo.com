@@ -2,7 +2,7 @@ import Lottie from "lottie-react";
 import flow from "../public/lotties/flow.json";
 
 const style = {
-  height: 200,
+  height: 150,
 };
 
 const Flow = () => {

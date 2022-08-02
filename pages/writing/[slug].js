@@ -32,10 +32,8 @@ function Post({ data, content }) {
             Go Back
           </a>
         </Link>
-        <h1 className="font-semibold mt-7">{data.title}</h1>
-        <time className="text-[#A1A1A1] text-left font-semibold italic mt-7">
-          {data.date}
-        </time>
+        <h2 className="font-semibold mt-7">{data.title}</h2>
+        <p className="text-[#A1A1A1] text-left mt-1">{data.date}</p>
         <div className="prose prose-headings:text-base prose-headings:font-semibold mt-7 prose-p:text-base prose-a:text-base prose-a:underline prose-a:duration-150 hover:prose-a:text-[#19A1FD]">
           <MDXRemote {...content} />
         </div>

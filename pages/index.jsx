@@ -4,15 +4,10 @@ import Image from "next/image";
 import Layout from "../components/Layout";
 import LinkText from "../components/link";
 
-import Flow from "../components/flow";
-
 export default function Home() {
   return (
     <Layout>
       <SEO />
-      <div className="mt-14">
-        <Flow />
-      </div>
       <p className="mt-14">
         I&apos;m a 16 year old designer living in Quezon City, Philippines
         who&apos;s currently finishing highschool. I love to craft beautiful
@@ -25,11 +20,21 @@ export default function Home() {
         </Link>
         {"."}
       </p>
-      <div className="flex space-x-4 mt-7">
-        <LinkText text="Email" link="mailto:bermudo.elumba@gmail.com" />
-        <LinkText text="Twitter" link="https://twitter.com/jcebermudo" />
-        <LinkText text="GitHub" link="https://github.com/jcebermudo" />
-        <LinkText text="CV" link="https://read.cv/bermudo" />
+      <div className="mt-7">
+        <ul className="flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 ">
+          <li>
+            <LinkText text="Email" link="mailto:bermudo.elumba@gmail.com" />
+          </li>
+          <li>
+            <LinkText text="Twitter" link="https://twitter.com/jcebermudo" />
+          </li>
+          <li>
+            <LinkText text="GitHub" link="https://github.com/jcebermudo" />
+          </li>
+          <li>
+            <LinkText text="CV" link="https://read.cv/bermudo" />
+          </li>
+        </ul>
       </div>
       <hr className="mt-7 border-[#767677] border-dashed opacity-30" />
       <h2 className="text-[#333333] font-semibold mt-7">Select Projects</h2>

@@ -5,9 +5,7 @@ function PostLink({ title, date, description, slug }) {
     <div>
       <div className="group sm:grid sm:grid-cols-3 mb-7">
         <div className="mb-4 sm:mb-0">
-          <h2 className="text-[#A1A1A1] text-left font-semibold italic">
-            {date}
-          </h2>
+          <h2 className="text-[#A1A1A1] text-left">{date}</h2>
         </div>
         <div className="sm:col-span-2">
           <Link href="writing/[slug]" as={`writing/${slug}`}>

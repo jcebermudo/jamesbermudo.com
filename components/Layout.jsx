@@ -5,7 +5,7 @@ import Footy from "./Footy";
 const Layout = ({ children }) => {
   return (
     <div>
-      <div className="p-8 mx-auto max-w-xl sm:px-6 sm:py-24">
+      <div className="p-10 sm:pt-20 mx-auto max-w-lg">
         <Nav />
         <main>{children}</main>
         <Footy />

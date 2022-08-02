@@ -9,24 +9,8 @@ export default function SEO({
 
   return (
     <Head>
-      <link
-        rel="preload"
-        href="/fonts/ibm-plex-sans-var.woff2"
-        as="font"
-        type="font/woff2"
-        crossOrigin="anonymous"
-      />
-      <link
-        rel="preload"
-        href="/fonts/ibm-plex-sans-var-italic.woff2"
-        as="font"
-        type="font/woff2"
-        crossOrigin="anonymous"
-      />
-      <meta name="viewport" content="width=device-width" />
-      <meta charSet="utf-8" />
-      <meta name="robots" content="index,follow" />
       <title>{`${title}`}</title>
+      <meta name="robots" content="index,follow" />
       <meta name="description" content={description} />
       <meta name="keywords" content="james bermudo, designer, blog" />
       <meta property="og:type" content="website" />
@@ -47,21 +31,6 @@ export default function SEO({
       <meta property="twitter:creator" content="@jcebermudo" />
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={description} />
-      <link
-        href="https://bermudo.me/images/favicon/favicon.ico"
-        rel="icon"
-        type="image/x-icon"
-      />
-      <link
-        href="https://bermudo.me/images/favicon/apple-icon-180x180.png"
-        rel="apple-touch-icon"
-        sizes="180x180"
-      />
-      <link
-        href="https://bermudo.me/images/favicon/apple-icon-76x76.png"
-        rel="apple-touch-icon"
-        sizes="76x76"
-      />
     </Head>
   );
 }

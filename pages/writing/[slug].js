@@ -4,10 +4,11 @@ import getPost from "../../helpers/getPost";
 import getPosts from "../../helpers/getPosts";
 import { serialize } from "next-mdx-remote/serialize";
 import Link from "next/link";
+import Layout from "../../components/Layout";
 
 function Post({ data, content }) {
   return (
-    <div>
+    <Layout>
       <SEO title={data.title} og={data.image} description={data.description} />
       <div className="mt-14">
         <Link href="/writing">
@@ -39,7 +40,7 @@ function Post({ data, content }) {
           <MDXRemote {...content} />
         </div>
       </div>
-    </div>
+    </Layout>
   );
 }
 

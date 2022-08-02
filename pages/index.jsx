@@ -6,7 +6,7 @@ import LinkText from "../components/link";
 
 export default function Home() {
   return (
-    <>
+    <Layout>
       <SEO />
       <p className="mt-14">
         I&apos;m a 16 year old designer living in Quezon City, Philippines
@@ -27,6 +27,6 @@ export default function Home() {
       </div>
       <hr className="mt-7 border-[#767677] border-dashed opacity-30" />
       <h2 className="text-[#333333] font-semibold mt-7">Select Projects</h2>
-    </>
+    </Layout>
   );
 }

@@ -7,7 +7,7 @@ import PostLink from "../../components/PostLink";
 
 export default function Blog({ posts }) {
   return (
-    <>
+    <Layout>
       <SEO
         title="Writing"
         og="writing.png"
@@ -32,7 +32,7 @@ export default function Blog({ posts }) {
           ))}
         </div>
       </div>
-    </>
+    </Layout>
   );
 }
 

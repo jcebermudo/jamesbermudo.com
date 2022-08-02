@@ -21,7 +21,7 @@ export default function Home() {
         {"."}
       </p>
       <div className="mt-7">
-        <ul className="flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 ">
+        <ul className="flex flex-col space-y-6 sm:flex-row sm:space-x-6 sm:space-y-0 ">
           <li>
             <LinkText text="Email" link="mailto:bermudo.elumba@gmail.com" />
           </li>

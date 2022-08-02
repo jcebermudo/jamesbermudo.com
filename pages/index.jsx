@@ -4,10 +4,15 @@ import Image from "next/image";
 import Layout from "../components/Layout";
 import LinkText from "../components/link";
 
+import Flow from "../components/flow";
+
 export default function Home() {
   return (
     <Layout>
       <SEO />
+      <div className="mt-14">
+        <Flow />
+      </div>
       <p className="mt-14">
         I&apos;m a 16 year old designer living in Quezon City, Philippines
         who&apos;s currently finishing highschool. I love to craft beautiful

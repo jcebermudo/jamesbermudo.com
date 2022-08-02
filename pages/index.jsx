@@ -29,6 +29,7 @@ export default function Home() {
         <LinkText text="Email" link="mailto:bermudo.elumba@gmail.com" />
         <LinkText text="Twitter" link="https://twitter.com/jcebermudo" />
         <LinkText text="GitHub" link="https://github.com/jcebermudo" />
+        <LinkText text="CV" link="https://read.cv/bermudo" />
       </div>
       <hr className="mt-7 border-[#767677] border-dashed opacity-30" />
       <h2 className="text-[#333333] font-semibold mt-7">Select Projects</h2>

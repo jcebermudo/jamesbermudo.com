@@ -1,4 +1,5 @@
 import SEO from "../../components/seo";
+import Image from "next/image";
 import { MDXRemote } from "next-mdx-remote";
 import getPost from "../../helpers/getPost";
 import getPosts from "../../helpers/getPosts";
@@ -32,10 +33,23 @@ function Post({ data, content }) {
             Go Back
           </a>
         </Link>
-        <h2 className="font-semibold mt-7">{data.title}</h2>
-        <p className="text-[#A1A1A1] text-left mt-1">{data.date}</p>
-        <div className="prose prose-headings:text-base prose-headings:font-semibold mt-7 prose-p:text-base prose-a:text-base prose-a:underline prose-a:duration-150 hover:prose-a:text-[#19A1FD]">
-          <MDXRemote {...content} />
+        <div className="mt-7">
+          <p className="text-[#A1A1A1] text-left">{data.date}</p>
+          <h2 className="font-semibold text-2xl sm:text-xl mt-1">
+            {data.title}
+          </h2>
+          <div className="mt-7">
+            <Image
+              alt=""
+              src={`/images/meta/${data.image}`}
+              quality="100"
+              width={700}
+              height={500}
+            />
+          </div>
+          <div className="prose prose-headings:text-base prose-headings:font-semibold mt-7 prose-p:text-base prose-a:text-base prose-a:underline prose-a:duration-150 hover:prose-a:text-[#19A1FD]">
+            <MDXRemote {...content} />
+          </div>
         </div>
       </div>
     </Layout>

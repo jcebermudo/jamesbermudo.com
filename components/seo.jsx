@@ -2,7 +2,7 @@ import Head from "next/head";
 
 export default function SEO({
   title = "James Bermudo",
-  og = "main.png",
+  og = "meta.png",
   description = "A designer living in Quezon City, Philippines.",
 }) {
   const siteTitle = "James Bermudo";
@@ -21,7 +21,7 @@ export default function SEO({
         property="og:image"
         content={`https://bermudo.me/images/meta/${og}`}
       />
-      <meta property="og:image:width" content="1000" />
+      <meta property="og:image:width" content="700" />
       <meta property="og:image:height" content="500" />
       <meta
         property="twitter:image"

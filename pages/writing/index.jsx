@@ -10,10 +10,12 @@ export default function Blog({ posts }) {
     <Layout>
       <SEO
         title="Writing"
-        og="writing.png"
+        og="meta-writing.png"
         description="Welcome to my digital garden."
       />
-      <h2 className="font-semibold mt-14">Thoughts & Stuff</h2>
+      <h2 className="font-semibold mt-14 text-2xl sm:text-xl">
+        Thoughts & Stuff
+      </h2>
       <p className="mt-7">
         I see writing as an expression of love to the things I’m passionate
         about. I mostly write about design and software.

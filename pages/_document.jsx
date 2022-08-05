@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <link
           rel="preload"
-          href="/fonts/Inter.woff2"
+          href="/fonts/Inter.var.woff2"
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"

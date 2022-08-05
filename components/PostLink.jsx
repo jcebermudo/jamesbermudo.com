@@ -3,10 +3,10 @@ import Link from "next/link";
 function PostLink({ title, date, description, slug }) {
   return (
     <div>
-      <hr className="border-[#b4b4b4] border-dashed opacity-30" />
-      <Link href="writing/[slug]" as={`writing/${slug}`}>
+      <hr className="border-[#b4b4b4] rounded border-dashed opacity-30" />
+      <Link href="blog/[slug]" as={`blog/${slug}`}>
         <a>
-          <div className="group sm:grid sm:grid-cols-3 py-7 px-2 duration-150 hover:bg-[#f5f5f5]">
+          <div className="group sm:grid sm:grid-cols-3 py-7 px-2 duration-150 hover:bg-[#f7f7f7]">
             <div className="mb-4 sm:mb-0">
               <h2 className="text-[#A1A1A1] text-left">{date}</h2>
             </div>

@@ -13,7 +13,7 @@ export default function Blog({ posts }) {
         og="meta-writing.png"
         description="Welcome to my digital garden."
       />
-      <h2 className="font-semibold mt-14 text-2xl sm:text-xl">
+      <h2 className="font-display mt-14 text-2xl sm:text-xl">
         Thoughts & Stuff
       </h2>
       <p className="mt-7">

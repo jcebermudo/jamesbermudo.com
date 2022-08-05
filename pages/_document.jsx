@@ -12,6 +12,20 @@ export default function Document() {
           crossOrigin="anonymous"
         />
         <link
+          rel="preload"
+          href="/fonts/Redaction35.otf"
+          as="font"
+          type="font/otf"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/Redaction35.italic.otf"
+          as="font"
+          type="font/otf"
+          crossOrigin="anonymous"
+        />
+        <link
           href="/images/favicon/favicon.ico"
           rel="icon"
           type="image/x-icon"

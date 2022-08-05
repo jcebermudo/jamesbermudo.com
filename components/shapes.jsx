@@ -1,6 +1,6 @@
 const Shapes = () => {
   return (
-    <div className="flex justify-center mt-14">
+    <div className="flex justify-center mt-7 sm:mt-14">
       <svg
         width="426"
         height="248"

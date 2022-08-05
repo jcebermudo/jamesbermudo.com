@@ -7,3 +7,19 @@
   font-style: oblique 0deg 10deg;
   src: url(/fonts/Inter.var.woff2) format("woff2");
 }
+
+@font-face {
+  font-family: "Redaction35";
+  font-weight: 400;
+  font-display: optional;
+  font-style: normal;
+  src: url(/fonts/Redaction35.otf);
+}
+
+@font-face {
+  font-family: "Redaction35";
+  font-weight: 400;
+  font-display: optional;
+  font-style: italic;
+  src: url(/fonts/Redaction35.italic.otf);
+}

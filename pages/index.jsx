@@ -11,14 +11,15 @@ export default function Home() {
     <Layout>
       <SEO />
       <Shapes />
-      <p className="mt-14">
-        I&apos;m a 16 year old designer living in Quezon City, Philippines
-        who&apos;s currently finishing highschool. I love to craft beautiful
-        internet things.
+      <p className="mt-7 sm:mt-14">
+        Hello, I&apos;m <span className="font-display">James Bermudo</span>, a
+        16-year-old designer living in Quezon City, Philippines who&apos;s
+        currently finishing high school. I love to craft beautiful internet
+        things.
         <br />
         <br />
         This website is the home of all my projects and{" "}
-        <Link href="/writing">
+        <Link href="/blog">
           <a className="underline underline-offset-4 duration-150 hover:text-[#19A1FD]">
             writing
           </a>
@@ -26,15 +27,12 @@ export default function Home() {
         {"."}
       </p>
       <div className="mt-7">
-        <ul className="flex flex-col space-y-6 sm:flex-row sm:space-x-6 sm:space-y-0 ">
+        <ul className="flex flex-col gap-y-6 sm:flex-row sm:gap-x-6 sm:gap-y-0 ">
           <li>
             <LinkText text="Email" link="mailto:bermudo.elumba@gmail.com" />
           </li>
           <li>
             <LinkText text="Twitter" link="https://twitter.com/jcebermudo" />
-          </li>
-          <li>
-            <LinkText text="GitHub" link="https://github.com/jcebermudo" />
           </li>
           <li>
             <LinkText text="CV" link="https://read.cv/bermudo" />

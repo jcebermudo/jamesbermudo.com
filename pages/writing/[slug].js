@@ -47,7 +47,7 @@ function Post({ data, content }) {
               height={500}
             />
           </div>
-          <div className="prose prose-headings:text-base prose-headings:font-semibold mt-7 prose-p:text-base prose-a:text-base prose-a:underline prose-a:duration-150 hover:prose-a:text-[#19A1FD]">
+          <div className="prose prose-headings:text-base prose-headings:font-semibold mt-7 prose-p:text-base prose-a:text-base prose-a:underline prose-a:underline-offset-4 prose-a:duration-150 hover:prose-a:text-[#19A1FD]">
             <MDXRemote {...content} />
           </div>
         </div>

@@ -19,7 +19,9 @@ export default function Home() {
         <br />
         This website is the home of all my projects and{" "}
         <Link href="/writing">
-          <a className="underline duration-150 hover:text-[#19A1FD]">writing</a>
+          <a className="underline underline-offset-4 duration-150 hover:text-[#19A1FD]">
+            writing
+          </a>
         </Link>
         {"."}
       </p>

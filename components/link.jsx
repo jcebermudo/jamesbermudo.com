@@ -4,7 +4,7 @@ const LinkText = (props) => {
       href={props.link}
       target="_blank"
       rel="noopener noreferrer"
-      className="group underline duration-150 hover:text-[#19A1FD]"
+      className="group duration-150 hover:text-[#19A1FD]"
     >
       {props.text}
       <span className="inline-block align-middle ml-[5px]">

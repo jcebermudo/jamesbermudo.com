@@ -6,14 +6,7 @@ export default function Document() {
       <Head>
         <link
           rel="preload"
-          href="/fonts/ibm-plex-sans-var.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/ibm-plex-sans-var-italic.woff2"
+          href="/fonts/inter.woff2"
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"

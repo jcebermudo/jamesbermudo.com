@@ -3,7 +3,7 @@
 @font-face {
   font-family: "Inter";
   font-style: normal;
-  font-weight: 400 600;
+  font-weight: 400;
   font-display: optional;
-  src: url(/fonts/inter.woff2) format("woff2");
+  src: url(/fonts/Inter.woff2) format("woff2");
 }

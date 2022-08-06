@@ -13,14 +13,14 @@ export default function Document() {
         />
         <link
           rel="preload"
-          href="/fonts/Redaction35.woff2"
+          href="/fonts/ArgentPixelCF-Regular.woff2"
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"
         />
         <link
           rel="preload"
-          href="/fonts/Redaction35.italic.woff2"
+          href="/fonts/ArgentPixelCF-Italic.woff2"
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"

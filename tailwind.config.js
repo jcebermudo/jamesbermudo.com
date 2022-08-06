@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Inter"],
-        display: ["Redaction35", "Inter"],
+        display: ["ArgentPixelCF", "Inter"],
       },
     },
   },

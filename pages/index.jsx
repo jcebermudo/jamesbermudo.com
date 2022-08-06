@@ -11,7 +11,7 @@ export default function Home() {
     <Layout>
       <SEO />
       <Shapes />
-      <p className="mt-7 sm:mt-14">
+      <p className="mt-4 sm:mt-14">
         Hello, I&apos;m <span className="font-display">James Bermudo</span>, a
         16-year-old designer living in Quezon City, Philippines who&apos;s
         currently finishing high school. I love to craft beautiful internet

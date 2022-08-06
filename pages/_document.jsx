@@ -48,7 +48,7 @@ export default function Document() {
         />
         <link rel="preconnect" href="https://vitals.vercel-insights.com" />
       </Head>
-      <body className="text-[#333333] bg-[#FBFBFB] selection:bg-[#ff189f] selection:text-[#ffffff] text-base">
+      <body className="text-[#333333] bg-[#FBFBFB] selection:bg-[#ff3cf5] selection:text-[#ffffff] text-lg sm:text-base">
         <Main />
         <NextScript />
       </body>

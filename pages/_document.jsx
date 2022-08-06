@@ -13,16 +13,16 @@ export default function Document() {
         />
         <link
           rel="preload"
-          href="/fonts/Redaction35.otf"
+          href="/fonts/Redaction35.woff2"
           as="font"
-          type="font/otf"
+          type="font/woff2"
           crossOrigin="anonymous"
         />
         <link
           rel="preload"
-          href="/fonts/Redaction35.italic.otf"
+          href="/fonts/Redaction35.italic.woff2"
           as="font"
-          type="font/otf"
+          type="font/woff2"
           crossOrigin="anonymous"
         />
         <link

@@ -12,14 +12,14 @@
   font-family: "ArgentPixelCF";
   font-weight: 400;
   font-display: optional;
-  font-style: normal;
+  font-style: swap;
   src: url(/fonts/ArgentPixelCF-Regular.woff2) format("woff2");
 }
 
 @font-face {
   font-family: "ArgentPixelCF";
   font-weight: 400;
-  font-display: optional;
+  font-display: swap;
   font-style: italic;
   src: url(/fonts/ArgentPixelCF-Italic.woff2) format("woff2");
 }

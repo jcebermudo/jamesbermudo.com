@@ -11,8 +11,8 @@
 @font-face {
   font-family: "ArgentPixelCF";
   font-weight: 400;
-  font-display: optional;
-  font-style: swap;
+  font-display: swap;
+  font-style: normal;
   src: url(/fonts/ArgentPixelCF-Regular.woff2) format("woff2");
 }
 

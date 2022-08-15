@@ -11,11 +11,11 @@ const Nav = () => {
           <a
             className={
               asPath === "/"
-                ? "text-[#333333] font-semibold text-xl sm:text-base duration-150 hover:text-[#19A1FD] hover:blur-[2px] select-none"
-                : "text-[#A1A1A1] font-semibold text-xl sm:text-base duration-150 hover:text-[#19A1FD] hover:blur-[2px] select-none"
+                ? "text-[#333333] font-display text-xl sm:text-base duration-150 hover:text-[#19A1FD] select-none"
+                : "text-[#A1A1A1] font-display text-xl sm:text-base duration-150 hover:text-[#19A1FD] select-none"
             }
           >
-            ●
+            home
           </a>
         </Link>
         <div className=" border border-[#b4b4b4] rounded h-3 opacity-30" />

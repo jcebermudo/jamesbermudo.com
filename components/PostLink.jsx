@@ -11,7 +11,7 @@ function PostLink({ title, date, description, slug }) {
               <h2 className="text-[#A1A1A1] text-left">{date}</h2>
             </div>
             <div className="sm:col-span-2">
-              <h3 className="text-[#333333] font-semibold duration-150 group-hover:text-[#19A1FD] visited:text-[#a0a0a0]">
+              <h3 className="text-[#333333] font-bold duration-150 group-hover:text-[#19A1FD] visited:text-[#a0a0a0]">
                 {title}
               </h3>
               <p className="text-[#575757] mt-2.5">{description}</p>

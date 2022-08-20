@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <Layout>
       <SEO />
-      <p className="mt-4 sm:mt-14">
-        I&apos;m <span className="font-display">James Bermudo</span>, a 16 year old high-school student and designer in the Philippines. I focus on crafting enjoyable digital experiences.
+      <p className="mt-14">
+        I&apos;m James Bermudo, a 16 year old high-school student and designer in the Philippines. I focus on crafting enjoyable digital experiences.
         <br />
         <br />
         This website is the home of all my work and{" "}

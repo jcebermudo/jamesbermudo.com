@@ -9,8 +9,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter"],
-        display: ["ArgentPixelCF", "Inter"],
+        sans: ["Moderat"]
       },
     },
   },

@@ -1,8 +1,8 @@
 import SEO from "../../components/seo";
 import Image from "next/image";
 import { MDXRemote } from "next-mdx-remote";
-import getPost from "../../helpers/getPost";
-import getPosts from "../../helpers/getPosts";
+import getPost from "../../bloghelpers/getPost";
+import getPosts from "../../bloghelpers/getPosts";
 import { serialize } from "next-mdx-remote/serialize";
 import Link from "next/link";
 import Layout from "../../components/Layout";

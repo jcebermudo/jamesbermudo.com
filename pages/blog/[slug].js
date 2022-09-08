@@ -14,7 +14,7 @@ function Post({ data, content }) {
       <div className="mt-14">
         <div className="mt-7">
           <p className="text-[#A1A1A1] text-left">{data.date}</p>
-          <h2 className="font-bold text-2xl sm:text-xl mt-1">
+          <h2 className="font-display text-2xl sm:text-xl mt-1">
             {data.title}
           </h2>
           <div className="mt-7">

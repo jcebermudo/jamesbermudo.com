@@ -9,7 +9,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Moderat"]
+        sans: ["Moderat"],
+        display: ["Redaction35"]
       },
     },
   },

@@ -15,3 +15,19 @@
   font-style: normal;
   src: url(/fonts/moderat-bold.woff) format("woff");
 }
+
+@font-face {
+  font-family: "Redaction35";
+  font-weight: 600;
+  font-display: block;
+  font-style: normal;
+  src: url(/fonts/redaction35.otf);
+}
+
+@font-face {
+  font-family: "Redaction35";
+  font-weight: 600;
+  font-display: block;
+  font-style: italic;
+  src: url(/fonts/redaction35-italic.otf);
+}

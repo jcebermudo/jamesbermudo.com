@@ -13,10 +13,12 @@ export default function Home() {
         <br />
         <br />
         This website is an archive of all my work and{" "}
-        <Link href="/blog">
-          <a className="underline underline-offset-4 duration-150 hover:text-[#19A1FD]">
+        <Link
+          href="/blog"
+          className="underline underline-offset-4 duration-150 hover:text-[#19A1FD]">
+          
             writing
-          </a>
+          
         </Link>
         {"."}
       </p>

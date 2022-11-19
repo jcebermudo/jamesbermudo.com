@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-  cursor: url(/cursors/black-cursor.cur), default;
+  cursor: url(/cursors/cursor.cur), default;
 }
 
 a {

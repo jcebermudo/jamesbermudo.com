@@ -12,6 +12,11 @@ body {
   cursor: url(/cursors/cursor.cur), default;
 }
 
+p,
+h2 {
+  cursor: url(/cursors/cursor-text.cur), text;
+}
+
 a {
   color: inherit;
   text-decoration: none;

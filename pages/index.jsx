@@ -12,7 +12,7 @@ export default function Home() {
         <span className="font-display italic">James Bermudo</span> — a 16 year old high-school student and designer in the Philippines. I focus on crafting enjoyable digital experiences.
         <br />
         <br />
-        This website is the home of all my work and{" "}
+        This website is an archive of all my work and{" "}
         <Link href="/blog">
           <a className="underline underline-offset-4 duration-150 hover:text-[#19A1FD]">
             writing

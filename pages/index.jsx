@@ -31,9 +31,6 @@ export default function Home() {
             <LinkText text="Twitter" link="https://twitter.com/jcebermudo" />
           </li>
           <li>
-            <LinkText text="Behance" link="https://behance.net/jcebermudo" />
-          </li>
-          <li>
             <LinkText text="CV" link="https://read.cv/bermudo" />
           </li>
         </ul>

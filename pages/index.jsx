@@ -9,7 +9,7 @@ export default function Home() {
     <Layout>
       <SEO />
       <p className="mt-14">
-        <span className="font-display italic">James Bermudo</span> — a 16 year old high-school student and designer in the Philippines. I focus on crafting enjoyable digital experiences.
+        <span className="font-display italic">James Bermudo</span> — a 16 year old high-school student and designer in the Philippines.
         <br />
         <br />
         This website is an archive of all my work and{" "}

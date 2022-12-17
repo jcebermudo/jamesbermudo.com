@@ -1,11 +1,11 @@
 import SEO from "../../components/seo";
 import Image from "next/image";
 import { MDXRemote } from "next-mdx-remote";
-import getPost from "../../bloghelpers/getPost";
-import getPosts from "../../bloghelpers/getPosts";
 import { serialize } from "next-mdx-remote/serialize";
 import Link from "next/link";
 import Layout from "../../components/Layout";
+import fs from 'fs'
+import path from 'path'
 
 function Post({ data, content }) {
   return (
@@ -37,22 +37,20 @@ function Post({ data, content }) {
 
 export default Post;
 
-export const getStaticPaths = async () => {
-  const posts = await getPosts();
-  const paths = posts.map((post) => ({ params: { slug: post.slug } }));
+export async function getStaticPaths() {
+  const postsDirectory = path.join(process.cwd(), 'posts')
+  const filenames = fs.readdirSync(postsDirectory)
+
+  const paths = filenames.map((filename) => {
+    return {
+      params: {
+        slug: filename.replace('.mdx', ''),
+      },
+    }
+  })
+
   return {
     paths,
     fallback: false,
-  };
-};
-
-export const getStaticProps = async ({ params }) => {
-  const post = await getPost(params.slug);
-  const mdxSource = await serialize(post.content);
-  return {
-    props: {
-      data: post.data,
-      content: mdxSource,
-    },
-  };
-};
+  }
+}

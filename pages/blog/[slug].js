@@ -16,7 +16,7 @@ import ImgText from "../../components/ImgText";
 
 const Post = ({
   frontMatter: { title, description, date, image },
-  source,
+  mdxSource,
 }) => {
   return (
     <Layout>
@@ -41,7 +41,7 @@ const Post = ({
             </Zoom>
           </div>
           <div className="prose prose-headings:text-base prose-headings:font-semibold mt-7 prose-p:text-lg prose-p:sm:text-base prose-a:text-lg prose-a:sm:text-base prose-a:underline prose-a:underline-offset-4 prose-a:duration-150 hover:prose-a:text-[#19A1FD]">
-            <MDXRemote components={{ ImgText, Image, Zoom }} {...source} />
+            <MDXRemote components={{ ImgText, Image, Zoom }} {...mdxSource} />
           </div>
         </div>
       </div>
@@ -71,18 +71,16 @@ const getStaticProps = async ({ params: { slug } }) => {
   );
 
   const { data: frontMatter, content } = matter(markdownWithMeta);
-  const source = await serialize(content);
+  const mdxSource = await serialize(content);
 
   return {
     props: {
       frontMatter,
       slug,
-      source,
+      mdxSource,
     },
-    revalidate: 1,
   };
 };
 
 export { getStaticProps, getStaticPaths };
-
 export default Post;

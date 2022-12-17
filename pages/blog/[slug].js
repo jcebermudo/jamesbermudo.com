@@ -12,7 +12,7 @@ import matter from "gray-matter";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-import ImgText from "../../components/imgtext";
+import ImgText from "../../components/ImgText";
 
 const Post = ({
   frontMatter: { title, description, date, image },

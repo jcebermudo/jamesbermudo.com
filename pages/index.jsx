@@ -9,16 +9,16 @@ export default function Home() {
     <Layout>
       <SEO />
       <p className="mt-14">
-        <span className="font-display italic">James Bermudo</span> — a 16 year old high-school student and designer in the Philippines.
+        <span className="font-display italic">James Bermudo</span> — a 16 year
+        old high-school student and designer in the Philippines.
         <br />
         <br />
         This website is an archive of all my work, experiments, and{" "}
         <Link
           href="/blog"
-          className="underline underline-offset-4 duration-150 hover:text-[#19A1FD]">
-          
-            writing
-          
+          className="underline underline-offset-4 duration-150 hover:text-[#19A1FD]"
+        >
+          writing
         </Link>
         {"."}
       </p>
@@ -31,7 +31,10 @@ export default function Home() {
             <LinkText text="Twitter" link="https://twitter.com/jcebermudo" />
           </li>
           <li>
-            <LinkText text="CV" link="https://read.cv/bermudo" />
+            <LinkText
+              text="LinkedIn"
+              link="https://www.linkedin.com/in/jcebermudo/"
+            />
           </li>
         </ul>
       </div>

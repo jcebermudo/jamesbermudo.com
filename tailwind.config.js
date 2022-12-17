@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Moderat"],
-        display: ["Redaction35"]
+        display: ["Redaction35"],
       },
     },
   },

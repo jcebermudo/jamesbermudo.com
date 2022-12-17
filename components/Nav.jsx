@@ -13,10 +13,9 @@ const Nav = () => {
             asPath === "/"
               ? "text-[#333333] font-display text-xl sm:text-base duration-150 hover:text-[#19A1FD] select-none"
               : "text-[#A1A1A1] font-display text-xl sm:text-base duration-150 hover:text-[#19A1FD] select-none"
-          }>
-          
-            home
-          
+          }
+        >
+          home
         </Link>
         <div className=" border border-[#b4b4b4] rounded h-3 opacity-30" />
         <Link
@@ -25,10 +24,9 @@ const Nav = () => {
             asPath === "/blog"
               ? "text-[#333333] font-display text-xl sm:text-base duration-150 hover:text-[#19A1FD] select-none"
               : "text-[#A1A1A1] font-display text-xl sm:text-base duration-150 hover:text-[#19A1FD] select-none"
-          }>
-          
-            blog
-          
+          }
+        >
+          blog
         </Link>
       </div>
     </header>

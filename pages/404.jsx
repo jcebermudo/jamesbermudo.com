@@ -11,10 +11,9 @@ export default function NotFound() {
         Don&apos;t know where to go? Go{" "}
         <Link
           href="/"
-          className="underline underline-offset-4 duration-150 hover:text-[#19A1FD]">
-          
-            here
-          
+          className="underline underline-offset-4 duration-150 hover:text-[#19A1FD]"
+        >
+          here
         </Link>
         {"."}
       </p>

@@ -18,7 +18,7 @@ export default function Blog({ posts }) {
       </h2>
       <p className="mt-7">
         I see writing as an expression of love to the things I’m passionate
-        about. I mostly write about design, software, and my personal life.
+        about. I mostly write about design and software.
       </p>
       <div>
         <div className="mt-7">

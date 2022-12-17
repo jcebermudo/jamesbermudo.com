@@ -8,13 +8,13 @@ function PostLink({ title, date, description, slug }) {
 
         <div className="group sm:grid sm:grid-cols-3 py-7 px-2 duration-150 hover:bg-[#f7f7f7]">
           <div className="mb-4 sm:mb-0">
-            <h2 className="text-[#A1A1A1] text-left">{date}</h2>
+            <h2 className="text-[#A1A1A1] text-left user-select-none">{date}</h2>
           </div>
           <div className="sm:col-span-2">
-            <h3 className="text-[#333333] font-bold duration-150 group-hover:text-[#19A1FD] visited:text-[#a0a0a0]">
+            <h3 className="text-[#333333] font-bold duration-150 group-hover:text-[#19A1FD] visited:text-[#a0a0a0] user-select-none">
               {title}
             </h3>
-            <p className="text-[#575757] mt-2.5">{description}</p>
+            <p className="text-[#575757] mt-2.5 user-select-none">{description}</p>
           </div>
         </div>
 

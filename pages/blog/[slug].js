@@ -34,11 +34,10 @@ const Posts = ({ frontMatter: { title, description, image, date }, mdxSource }) 
                 quality="100"
                 width={700}
                 height={500}
-                className="w-full"
               />
             </Zoom>
           </div>
-          <div className="prose-headings:text-base prose-headings:font-semibold prose-p:mb-7 prose-p:text-lg prose-p:sm:text-base prose-a:text-lg prose-a:sm:text-base prose-a:underline prose-a:underline-offset-4 prose-a:duration-150 hover:prose-a:text-[#19A1FD]">
+          <div className="prose-headings:text-base prose-headings:font-semibold prose-p:mt-4 prose-p:mb-7 prose-p:text-lg prose-p:sm:text-base prose-a:text-lg prose-a:sm:text-base prose-a:underline prose-a:underline-offset-4 prose-a:duration-150 hover:prose-a:text-[#19A1FD]">
           <MDXRemote {...mdxSource} components={{Link, Image, Zoom, ImgText}} />
           </div>
         </div>

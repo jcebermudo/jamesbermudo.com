@@ -3,26 +3,23 @@ import Image from "next/image";
 import Link from "next/link";
 import Layout from "../../components/Layout";
 
-import { serialize } from "next-mdx-remote/serialize";
-import { MDXRemote } from "next-mdx-remote";
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
 
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
-
 import ImgText from "../../components/ImgText";
 
-const Post = ({
-  frontMatter: { title, description, date, image },
-  mdxSource,
-}) => {
+import { serialize } from 'next-mdx-remote/serialize'
+import { MDXRemote } from 'next-mdx-remote'
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
+
+const Posts = ({ frontMatter: { title, description, image, date }, mdxSource }) =>  {
   return (
     <Layout>
       <SEO
         title={title}
-        og={`/images/meta/blogimg/${image}`}
+        og={`${image}`}
         description={description}
       />
       <div className="mt-14">
@@ -33,7 +30,7 @@ const Post = ({
             <Zoom>
               <Image
                 alt=""
-                src={`/images/meta/blogimg/${image}`}
+                src={`${image}`}
                 quality="100"
                 width={700}
                 height={500}
@@ -41,7 +38,7 @@ const Post = ({
             </Zoom>
           </div>
           <div className="prose prose-headings:text-base prose-headings:font-semibold mt-7 prose-p:text-lg prose-p:sm:text-base prose-a:text-lg prose-a:sm:text-base prose-a:underline prose-a:underline-offset-4 prose-a:duration-150 hover:prose-a:text-[#19A1FD]">
-            <MDXRemote components={{ ImgText, Image, Zoom }} {...mdxSource} />
+          <MDXRemote {...mdxSource} components={{Link, Image, Zoom, ImgText}} />
           </div>
         </div>
       </div>
@@ -50,37 +47,35 @@ const Post = ({
 };
 
 const getStaticPaths = async () => {
-  const files = fs.readdirSync(path.join("posts"));
+  const files = fs.readdirSync(path.join('posts'))
 
-  const paths = files.map((filename) => ({
+  const paths = files.map(filename => ({
     params: {
-      slug: filename.replace(".mdx", ""),
-    },
-  }));
+      slug: filename.replace('.mdx', '')
+    }
+  }))
 
   return {
     paths,
-    fallback: false,
-  };
-};
+    fallback: false
+  }
+}
 
 const getStaticProps = async ({ params: { slug } }) => {
-  const markdownWithMeta = fs.readFileSync(
-    path.join("posts", slug + ".mdx"),
-    "utf-8"
-  );
+  const markdownWithMeta = fs.readFileSync(path.join('posts',
+    slug + '.mdx'), 'utf-8')
 
-  const { data: frontMatter, content } = matter(markdownWithMeta);
-  const mdxSource = await serialize(content);
+  const { data: frontMatter, content } = matter(markdownWithMeta)
+  const mdxSource = await serialize(content)
 
   return {
     props: {
       frontMatter,
       slug,
-      mdxSource,
-    },
-  };
-};
+      mdxSource
+    }
+  }
+}
 
-export { getStaticProps, getStaticPaths };
-export default Post;
+export { getStaticProps, getStaticPaths }
+export default Posts

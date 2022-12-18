@@ -10,7 +10,7 @@ export default function Home() {
       <SEO />
       <p className="mt-14">
         <span className="font-display italic">James Bermudo</span> — a 16 year
-        old high-school student and designer in the Philippines.
+        old high-school student, designer, and engineer in the Philippines.
         <br />
         <br />
         This website is an archive of all my work, experiments, and{" "}

@@ -12,7 +12,7 @@ export default function Home() {
         <span className="font-display italic">James Bermudo</span> — a 16 year
         old high-school student, designer, and engineer in the Philippines.     
         I&apos;m currently a co-founder at <a href="https://hypershelter.co"className="underline underline-offset-4 duration-150 hover:text-[#19A1FD]">Hypershelter</a>, a startup that builds solar-powered tents for displaced typhoon victims. 
-        Before that, I was freelancer doing graphic & motion design for studios and brands.
+        Before that, I was a freelancer doing graphic & motion design for studios and brands.
         <br />
         <br />
         This website is an archive of all my work, experiments, and{" "}

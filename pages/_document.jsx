@@ -6,30 +6,16 @@ export default function Document() {
       <Head>
         <link
           rel="preload"
-          href="/fonts/moderat-regular.woff"
+          href="/fonts/Lora.woff"
           as="font"
-          type="font/woff"
+          type="font/woff2"
           crossOrigin="anonymous"
         />
         <link
           rel="preload"
-          href="/fonts/moderat-bold.woff"
+          href="/fonts/Lora-Italic.woff"
           as="font"
-          type="font/woff"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/redaction35.woff"
-          as="font"
-          type="font/woff"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/redaction35-italic.woff"
-          as="font"
-          type="font/woff"
+          type="font/woff2"
           crossOrigin="anonymous"
         />
         <link
@@ -55,7 +41,7 @@ export default function Document() {
         />
         <link rel="preconnect" href="https://vitals.vercel-insights.com" />
       </Head>
-      <body className="text-[#333333] bg-[#FBFBFB] selection:bg-[#ff3cf5] selection:text-[#ffffff] text-lg sm:text-base">
+      <body className="text-[#2D303E] bg-[#FBFBFB] selection:bg-[#2D303E] selection:text-[#ffffff] text-lg sm:text-base">
         <Main />
         <NextScript />
       </body>

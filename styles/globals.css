@@ -9,18 +9,11 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-  cursor: url(/cursors/cursor.cur), default;
-}
-
-p,
-h2 {
-  cursor: url(/cursors/cursor-text.cur), text;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-  cursor: url(/cursors/cursor-pointer.cur), pointer;
 }
 
 * {

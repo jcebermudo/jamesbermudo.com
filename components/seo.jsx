@@ -17,16 +17,10 @@ export default function SEO({
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:site_name" content="James Bermudo" />
-      <meta
-        property="og:image"
-        content={`https://bermudo.me${og}`}
-      />
+      <meta property="og:image" content={`https://bermudo.me${og}`} />
       <meta property="og:image:width" content="700" />
       <meta property="og:image:height" content="500" />
-      <meta
-        property="twitter:image"
-        content={`https://bermudo.me${og}`}
-      />
+      <meta property="twitter:image" content={`https://bermudo.me${og}`} />
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:creator" content="@jcebermudo" />
       <meta property="twitter:title" content={title} />

@@ -1,33 +1,41 @@
-/*sans-serifs*/
+/*serifs*/
 
 @font-face {
-  font-family: "Moderat";
+  font-family: "Lora";
   font-weight: 400;
   font-display: block;
   font-style: normal;
-  src: url(/fonts/moderat-regular.woff) format("woff");
+  src: url(/fonts/Lora.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: "Moderat";
+  font-family: "Lora";
+  font-weight: 500;
+  font-display: block;
+  font-style: normal;
+  src: url(/fonts/Lora.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Lora";
   font-weight: 600;
   font-display: block;
   font-style: normal;
-  src: url(/fonts/moderat-bold.woff) format("woff");
+  src: url(/fonts/Lora.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: "Redaction35";
-  font-weight: 600;
+  font-family: "Lora";
+  font-weight: 700;
   font-display: block;
   font-style: normal;
-  src: url(/fonts/redaction35.otf);
+  src: url(/fonts/Lora.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: "Redaction35";
-  font-weight: 600;
+  font-family: "Lora";
+  font-weight: 400;
   font-display: block;
   font-style: italic;
-  src: url(/fonts/redaction35-italic.otf);
+  src: url(/fonts/Lora-Italic.woff2) format("woff2");
 }

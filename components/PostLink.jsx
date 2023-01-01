@@ -1,24 +1,28 @@
 import Link from "next/link";
+import Image from "next/image";
 
-function PostLink({ title, date, description, slug }) {
+function PostLink({ title, date, slug, image, description }) {
   return (
     <div>
-      <hr className="border-[#b4b4b4] rounded border-dashed opacity-30" />
-      <Link href="blog/[slug]" as={`blog/${slug}`}>
-        <div className="group sm:grid sm:grid-cols-3 py-7 px-2 duration-150 hover:bg-[#f7f7f7]">
-          <div className="mb-4 sm:mb-0">
-            <p className="text-[#A1A1A1] text-left cursor-[url(/cursors/cursor-pointer.cur),_pointer]">
-              {date}
-            </p>
-          </div>
-          <div className="sm:col-span-2">
-            <h3 className="text-[#333333] font-bold duration-150 group-hover:text-[#19A1FD] visited:text-[#a0a0a0] user-select-none">
-              {title}
-            </h3>
-            <p className="text-[#575757] mt-3 cursor-[url(/cursors/cursor-pointer.cur),_pointer]">
-              {description}
-            </p>
-          </div>
+      <Link href="posts/[slug]" as={`posts/${slug}`}>
+        <div className="group duration-150 mt-8">
+          <p className="text-[#87879A] mt-2">{date}</p>
+          <h2 className=" group-hover:text-[#1281E1] text-2xl font-medium">
+            {title}
+          </h2>
+          {Boolean(image) && (
+            <Image
+              src={image}
+              alt=""
+              width={2080}
+              height={2080}
+              className="mt-4"
+            />
+          )}
+          <p className="mt-7">
+            {description}
+            <span className="font-bold">...Read more</span>
+          </p>
         </div>
       </Link>
     </div>

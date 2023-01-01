@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Jesse from "../public/images/general/200.gif";
 
 export default function NotFound() {
   return (

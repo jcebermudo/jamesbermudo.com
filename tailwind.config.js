@@ -9,8 +9,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Moderat"],
-        display: ["Redaction35"],
+        sans: ["Lora"],
       },
     },
   },

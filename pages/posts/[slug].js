@@ -1,10 +1,8 @@
 import SEO from "../../components/seo";
-import Image from "next/image";
 import Link from "next/link";
 import Layout from "../../components/Layout";
 
-import Zoom from "react-medium-image-zoom";
-import "react-medium-image-zoom/dist/styles.css";
+import MDXImage from "../../components/MDXImage";
 import ImgText from "../../components/ImgText";
 
 import { serialize } from "next-mdx-remote/serialize";
@@ -44,21 +42,16 @@ const Posts = ({
           <h2 className="font-display text-2xl font-medium mt-1">{title}</h2>
           {image && (
             <div className="mt-7">
-              <Zoom>
-                <Image
+                <MDXImage
                   alt=""
                   src={`${image}`}
-                  quality="100"
-                  width={700}
-                  height={500}
                 />
-              </Zoom>
             </div>
           )}
           <div className="prose-headings:text-base prose-headings:font-semibold prose-p:mt-4 prose-p:mb-7 prose-p:text-lg prose-p:sm:text-base prose-a:text-lg prose-a:sm:text-base prose-a:underline prose-a:underline-offset-4 prose-a:duration-150 hover:prose-a:text-[#19A1FD]">
             <MDXRemote
               {...mdxSource}
-              components={{ Link, Image, Zoom, ImgText }}
+              components={{ Link, MDXImage, ImgText }}
             />
           </div>
         </div>

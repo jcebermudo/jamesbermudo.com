@@ -14,8 +14,8 @@ function PostLink({ title, date, slug, image, description }) {
             <Image
               src={image}
               alt=""
-              width={2080}
-              height={2080}
+              width={3840}
+              height={2160}
               className="mt-4"
             />
           )}

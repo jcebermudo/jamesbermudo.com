@@ -15,8 +15,8 @@ export default function Home({ posts }) {
     <Layout>
       <SEO />
       <div>
-        <h1 className="font-semibold text-xl">James Bermudo</h1>
-        <li className="text-sm list-none flex gap-x-2 text-[#87879A] duration-75 mt-2">
+        <h1 className="font-semibold text-2xl sm:text-xl">James Bermudo</h1>
+        <li className=" text-base sm:text-sm list-none flex gap-x-2 text-[#87879A] duration-75 mt-2">
           <a
             href="mailto:your-email@example.com"
             className="hover:text-[#1281E1]"

@@ -50,11 +50,11 @@ export default function Home({ posts }) {
         </li>
       </div>
       <p className="mt-6">
-        I&apos;m a 16 year old high-school student, designer, and engineer in
-        the Philippines. I&apos;m currently a co-founder at Hypershelter, a
-        startup that builds solar-powered tents for displaced typhoon victims,
-        and Alan, an AI assistant for writing blogposts. Before that, I was a
-        freelancer doing graphic & motion design for studios and brands.
+        I&apos;m a 16 year old high-school student, designer, and engineer from
+        Manila. I&apos;m currently a co-founder at Hypershelter, a startup that
+        builds solar-powered tents for displaced typhoon victims, and Alan, an
+        AI assistant for writing blogposts. Before that, I was a freelancer
+        doing graphic & motion design for studios and brands.
         <br></br>
         <br></br>
         This website is an archive of all my work, experiments, and writing.

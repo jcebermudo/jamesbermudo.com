@@ -42,10 +42,7 @@ const Posts = ({
           <h2 className="font-display text-2xl font-medium mt-1">{title}</h2>
           {image && (
             <div className="mt-7">
-                <MDXImage
-                  alt=""
-                  src={`${image}`}
-                />
+              <MDXImage alt="" src={`${image}`} />
             </div>
           )}
           <div className="prose-headings:text-base prose-headings:font-semibold prose-p:mt-4 prose-p:mb-7 prose-p:text-lg prose-p:sm:text-base prose-a:text-lg prose-a:sm:text-base prose-a:underline prose-a:underline-offset-4 prose-a:duration-150 hover:prose-a:text-[#19A1FD]">
@@ -88,11 +85,11 @@ const Posts = ({
                   <ul>GitHub</ul>
                 </a>
                 <a
-            href="https://jcebermudo.substack.com/"
-            className="hover:text-[#1281E1]"
-          >
-            <ul>Newsletter</ul>
-          </a>
+                  href="https://jcebermudo.substack.com/"
+                  className="hover:text-[#1281E1]"
+                >
+                  <ul>Newsletter</ul>
+                </a>
               </li>
             </div>
           </div>

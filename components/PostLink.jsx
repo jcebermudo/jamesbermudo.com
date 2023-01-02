@@ -7,9 +7,7 @@ function PostLink({ title, date, slug, image, description }) {
       <Link href="posts/[slug]" as={`posts/${slug}`}>
         <div className="duration-150 mt-8">
           <p className="text-[#87879A] mt-2">{date}</p>
-          <h2 className="text-2xl font-medium">
-            {title}
-          </h2>
+          <h2 className="text-2xl font-medium">{title}</h2>
           {Boolean(image) && (
             <Image
               src={image}
@@ -21,7 +19,9 @@ function PostLink({ title, date, slug, image, description }) {
           )}
           <p className="mt-7">
             {description}
-            <span className="font-bold duration-75 hover:text-[#1281E1]">...Read more</span>
+            <span className="font-bold duration-75 hover:text-[#1281E1]">
+              ...Read more
+            </span>
           </p>
         </div>
       </Link>

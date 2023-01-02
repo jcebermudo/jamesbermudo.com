@@ -58,11 +58,11 @@ const Posts = ({
         <footer>
           <div className="mt-14">
             <hr className="border-[#b4b4b4] rounded border-dashed opacity-30" />
-            <div className="flex flex-row mt-7">
-              <p className="basis-11/12 text-[#A1A1A1] text-base sm:text-sm select-none">
-                © 2022 James Bermudo
+            <div className="row mt-7">
+              <p className="basis-11/12 text-[#A1A1A1] italic select-none">
+                Find me elsewhere
               </p>
-              <li className="text-sm list-none flex gap-x-2 text-[#87879A] duration-75">
+              <li className="list-none flex flex-col sm:flex-row sm:gap-x-2 mt-4 sm:mt-2 text-[#87879A] duration-75">
                 <a
                   href="mailto:your-email@example.com"
                   className="hover:text-[#1281E1]"
@@ -87,6 +87,12 @@ const Posts = ({
                 >
                   <ul>GitHub</ul>
                 </a>
+                <a
+            href="https://jcebermudo.substack.com/"
+            className="hover:text-[#1281E1]"
+          >
+            <ul>Newsletter</ul>
+          </a>
               </li>
             </div>
           </div>

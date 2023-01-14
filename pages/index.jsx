@@ -51,8 +51,8 @@ export default function Home({ posts }) {
       </div>
       <p className="mt-6">
         I am a 16-year-old student, designer, and engineer from Manila.
-        Currently, I am building <a href="https://alan.so" target="_blank">Alan</a>, an AI assistant for writing blog posts,
-        and I am also the co-founder of H<a href="https://hypershelter.co" target="_blank">Hypershelter</a>, a startup that builds
+        Currently, I am building <a href="https://alan.so" target="_blank" rel="noreferrer">Alan</a>, an AI assistant for writing blog posts,
+        and I am also the co-founder of <a href="https://hypershelter.co" target="_blank" rel="noreferrer">Hypershelter</a>, a startup that builds
         solar-powered tents for typhoon victims. In the past, I have worked as a
         freelancer in graphic and motion design for studios and brands. I am
         passionate about creating beautiful software, from design to code.

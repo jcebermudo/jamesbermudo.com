@@ -56,9 +56,6 @@ export default function Home({ posts }) {
         solar-powered tents for typhoon victims. In the past, I have worked as a
         freelancer in graphic and motion design for studios and brands. I am
         passionate about creating beautiful software, from design to code.
-        <br></br>
-        <br></br>
-        This website is an archive of all my work, experiments, and writing.
       </p>
       <div className="mt-16">
         {posts.map((post) => (

@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-      <link
+        <link
           rel="preload"
           href="/fonts/moderat-regular.woff"
           as="font"

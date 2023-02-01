@@ -4,18 +4,18 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link
+      <link
           rel="preload"
-          href="/fonts/Lora.woff"
+          href="/fonts/moderat-regular.woff"
           as="font"
-          type="font/woff2"
+          type="font/woff"
           crossOrigin="anonymous"
         />
         <link
           rel="preload"
-          href="/fonts/Lora-Italic.woff"
+          href="/fonts/moderat-bold.woff"
           as="font"
-          type="font/woff2"
+          type="font/woff"
           crossOrigin="anonymous"
         />
         <link

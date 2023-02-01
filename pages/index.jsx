@@ -41,12 +41,6 @@ export default function Home({ posts }) {
           >
             <ul>GitHub</ul>
           </a>
-          <a
-            href="https://jcebermudo.substack.com/"
-            className="hover:text-[#1281E1]"
-          >
-            <ul>Newsletter</ul>
-          </a>
         </li>
       </div>
       <p className="mt-6">

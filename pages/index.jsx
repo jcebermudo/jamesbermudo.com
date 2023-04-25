@@ -45,19 +45,11 @@ export default function Home({ posts }) {
       </div>
       <p className="mt-6">
         I am a 16-year-old student, designer, and engineer from Manila.
-        Currently, I am building{" "}
-        <a href="https://alan.so" target="_blank" rel="noreferrer">
-          Alan
-        </a>
-        , an AI assistant for writing blog posts, and I am also the co-founder
-        of{" "}
+        Currently, I am a cofounder at {" "}
         <a href="https://hypershelter.co" target="_blank" rel="noreferrer">
           Hypershelter
         </a>
-        , a startup that builds solar-powered tents for typhoon victims. In the
-        past, I have worked as a freelancer in graphic and motion design for
-        studios and brands. I am passionate about creating beautiful software,
-        from design to code.
+        where we build solar-powered tents and disaster response software to fight typhoons in the Philippines.
       </p>
       <div className="mt-16">
         {posts.map((post) => (

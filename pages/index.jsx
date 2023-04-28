@@ -46,7 +46,7 @@ export default function Home({ posts }) {
       <p className="mt-6">
         I&apos;m a 16-year-old student, designer, and engineer from Manila.
         Currently, I am a cofounder at {" "}
-        <a href="https://hypershelter.co" target="_blank" rel="noreferrer">
+        <a href="https://hypershelter.co" target="_blank" rel="noreferrer" className="hover:text-[#1281E1]">
           Hypershelter
         </a>
         {" "}where we build solar-powered tents and disaster response software to fight typhoons in the Philippines. While I&apos;m not working on that, you can catch me working on some experiments and building little apps.

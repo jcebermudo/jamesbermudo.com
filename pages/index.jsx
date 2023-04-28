@@ -44,12 +44,12 @@ export default function Home({ posts }) {
         </li>
       </div>
       <p className="mt-6">
-        I am a 16-year-old student, designer, and engineer from Manila.
+        I&apos;m a 16-year-old student, designer, and engineer from Manila.
         Currently, I am a cofounder at {" "}
         <a href="https://hypershelter.co" target="_blank" rel="noreferrer">
           Hypershelter
         </a>
-        where we build solar-powered tents and disaster response software to fight typhoons in the Philippines.
+        {" "}where we build solar-powered tents and disaster response software to fight typhoons in the Philippines. While I&apos;m not working on that, you can catch me working on some experiments and building little apps.
       </p>
       <div className="mt-16">
         {posts.map((post) => (

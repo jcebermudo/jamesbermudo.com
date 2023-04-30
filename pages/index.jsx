@@ -49,7 +49,7 @@ export default function Home({ posts }) {
         <a href="https://hypershelter.co" target="_blank" rel="noreferrer" className="hover:text-[#1281E1] underline">
           Hypershelter
         </a>
-        {" "}where we build solar-powered tents and disaster response software to fight typhoons in the Philippines. While I&apos;m not working on that, you can catch me working on some experiments and building little apps.
+        {" "}where we build solar-powered tents and disaster response software to fight typhoons in the Philippines. While I&apos;m not working on that, you can catch me tinkering with AI, web technologies, and math.
       </p>
       <div className="mt-16">
         {posts.map((post) => (

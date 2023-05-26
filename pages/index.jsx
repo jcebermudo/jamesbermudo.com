@@ -45,11 +45,7 @@ export default function Home({ posts }) {
       </div>
       <p className="mt-6">
         I&apos;m a 16-year-old student, designer, and engineer from Manila.
-        Currently, I am a cofounder at {" "}
-        <a href="https://hypershelter.co" target="_blank" rel="noreferrer" className="hover:text-[#1281E1] underline">
-          Hypershelter
-        </a>
-        {" "}where we build solar-powered tents and disaster response software to fight typhoons in the Philippines. When I&apos;m not working on that, you can catch me tinkering with AI, web technologies, and math.
+        Currently, I&apos;m running Particles, a digital product studio for startups. Other than that, you can catch me working on side projects and writing essays.
       </p>
       <div className="mt-16">
         {posts.map((post) => (

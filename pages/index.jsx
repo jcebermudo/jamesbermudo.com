@@ -18,7 +18,7 @@ export default function Home({ posts }) {
         <h1 className="font-semibold text-2xl sm:text-xl">James Bermudo</h1>
         <li className="sm:text-left list-none flex flex-col sm:flex-row sm:gap-x-2 text-[#87879A] duration-75 mt-2">
           <a
-            href="mailto:your-email@example.com"
+            href="mailto:bermudo.elumba@gmail.com"
             className="hover:text-[#1281E1]"
           >
             <ul>Email</ul>

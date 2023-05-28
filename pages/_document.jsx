@@ -23,16 +23,6 @@ export default function Document() {
           rel="icon"
           type="image/x-icon"
         />
-        <link
-          href="/images/favicon/apple-icon-180x180.png"
-          rel="apple-touch-icon"
-          sizes="180x180"
-        />
-        <link
-          href="/images/favicon/apple-icon-76x76.png"
-          rel="apple-touch-icon"
-          sizes="76x76"
-        />
         <meta content="#ffffff" name="theme-color" />
         <meta content="#ffffff" name="msapplication-TileColor" />
         <meta

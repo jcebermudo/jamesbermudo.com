@@ -45,7 +45,7 @@ export default function Home({ posts }) {
       </div>
       <p className="mt-6">
         I&apos;m a 16-year-old student, designer, and engineer from Manila.
-        I&apos;m currently running <LinkText>Particles</LinkText>, a design studio for startups (we also build our own products!). When I&apos;m not working on that, you can catch me studying math and physics, tinker with new machine learning models, or practicing my sketching.
+        I&apos;m currently running <LinkText href="https://particles.work">Particles</LinkText>, a design studio for startups (we also build our own products!). When I&apos;m not working on that, you can catch me studying math and physics, tinker with new machine learning models, or practicing my sketching.
       </p>
       <div className="mt-16">
         {posts.map((post) => (

@@ -13,15 +13,23 @@ const { frontmatter } = Astro.props;
   <main>
     <a href="/" class="link">Go back to main page</a>
     <h1>{frontmatter.title}</h1>
-    <p>{frontmatter.date}</p>
+    <p class="date">{frontmatter.date}</p>
     <img src={frontmatter.image} alt="blog-image" />
     <div class="content">
       <slot />
     </div>
     <div class="socials">
-      <a target="_blank" href="https://www.linkedin.com/in/jcebermudo/" class="link">LinkedIn</a>
-      <a target="_blank" href="https://twitter.com/jcebermudo" class="link">Twitter</a>
-      <a target="_blank" href="https://github.com/jcebermudo" class="link">GitHub</a>
+      <a target="_blank" href="mailto:bermudo.elumba@gmail.com" class="link"
+        >Email</a
+      >
+      <a target="_blank" href="https://twitter.com/jcebermudo" class="link"
+        >Twitter</a
+      >
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/jcebermudo/"
+        class="link">LinkedIn</a
+      >
     </div>
   </main>
 </Layout>
@@ -33,7 +41,7 @@ const { frontmatter } = Astro.props;
     margin-left: 10px;
     margin-bottom: 30px;
     margin-top: 30px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
     color: black;
   }
@@ -51,9 +59,13 @@ const { frontmatter } = Astro.props;
 
   h1 {
     color: black;
-    font-size: 24px;
+    font-size: 14px;
     font-weight: normal;
     margin-top: 50px;
+  }
+
+  .date {
+    font-style: italic;
   }
 
   .link {

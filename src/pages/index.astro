@@ -10,81 +10,38 @@ import Layout from "../layouts/Layout.astro";
   pageImg="none"
 >
   <main>
+    <h1>James Bermudo</h1>
     <p>
-      I'm James Bermudo, a 17-year old highschool student & designer from Manila.
-      <br /><br />
-      Currently:
-      <ul>
-        <li>Interning at <a target="_blank" href="https://swarm.work" class="link">Swarm</a>, a platform where consultancies can get their best clients for AI, Design, and Software Engineering.</li>
-        <br />
-        <li>Running <a target="_blank" href="https://sandboxhq.co" class="link">Sandbox</a> where we build software for early-stage startups.</li>
-        <br />
-        <li>Helping Filipino students get their headstart in entrepeneurship at Young Founders Summit Philippines</li>
-        <br />
-        <li>Doing things you normally do in high-school (academics)</li>
-      </ul> 
+      I'm a designer and founder from Manila. I'm currently running <a
+        href="https://interval.software"
+        target="_blank">Interval</a
+      >, a design agency for early-stage startups.
     </p>
-     <p class="previously">Previously:</p>
-    <ul class="prev-list">
-       <li>
-        Held workshops teaching Filipinos how to code at <a target="_blank" href="https://https://adaptechph.org/" class="link">Adaptech</a>.
-      </li>
-      <br />
+    <h2>Let's Connect:</h2>
+    <ul>
       <li>
-        Started a startup called Hypershelter. We built software for disaster response and solar-powered tents. Flew
-        to Singapore to pitch and received funding from the <a
-          target="_blank"
-          href="https://www.smarterme.sg/yfs"
-          class="link">Young Founders Summit</a
-        >. Also got featured on <a target="_blank" href="https://www.youtube.com/watch?v=2n7x5AwVElw" class="link"
-          >local TV</a
-        > and an <a target="_blank" href="https://www.pep.ph/lifestyle/extraordinary/169485/3-pinoy-students-finalists-young-founders-summit-2022-a4888-20221104" class="link">article</a>.
+        <a href="mailto:bermudo.elumba@gmail.com" class="link" target="_blank">Email</a>
       </li>
-      <br />
-      <li>
-        Got one of my <a target="_blank" href="https://www.behance.net/gallery/117759593/Ideas-in-Motion" class="link">films</a> featured
-        by Adobe and Behance's motion design and After Effects category.
-      </li>
-      <br />
-      <li>
-        Started a digital agency with some internet friends and had Minecraft
-        YouTubers as clients.
-      </li>
-      <br />
-      <li>
-        Freelanced as a designer and developer for companies, agencies, content
-        creators, and Minecraft servers. Worked with YouTubers with 1M+
-        subscribers like <a target="_blank" href="https://www.youtube.com/@Spifey" class="link">Spifey</a> and
-        <a target="_blank" href="https://www.youtube.com/@Bionic" class="link">Bionic</a>.
-      </li>
+      <li><a href="" class="link" target="_blank">Twitter</a></li>
+      <li><a href="" class="link" target="_blank">LinkedIn</a></li>
     </ul>
-    <div class="socials">
-      <a target="_blank" href="https://www.linkedin.com/in/jcebermudo/" class="link">LinkedIn</a>
-      <a target="_blank" href="https://twitter.com/jcebermudo" class="link">Twitter</a>
-      <a target="_blank" href="https://github.com/jcebermudo" class="link">GitHub</a>
-    </div>
-    <p class="notebook">Notebook:</p>
-    <ul class="blogs">
+    <h2>Essays:</h2>
+    <ul class="essays">
       <li>
-        <a target="_blank" href="/posts/post-5/" class="link"
-          >I'm building Alan</a
+        <a href="/posts/post-5/" class="link">I'm building Alan</a>
+      </li>
+      <li>
+        <a href="/posts/post-4/" class="link">Using GPT-3 to Pitch My Startup</a
         >
       </li>
       <li>
-        <a target="_blank" href="/posts/post-4/" class="link"
-          >Using GPT-3 to Pitch My Startup</a
-        >
+        <a href="/posts/post-3/" class="link">Young Founders Summit</a>
       </li>
       <li>
-        <a target="_blank" href="/posts/post-3/" class="link"
-          >Young Founders Summit 2022</a
-        >
+        <a href="/posts/post-2/" class="link">16</a>
       </li>
-      <li><a target="_blank" href="/posts/post-2/" class="link">16</a></li>
       <li>
-        <a target="_blank" href="/posts/post-1/" class="link"
-          >Desigining in Minecraft</a
-        >
+        <a href="/posts/post-1/" class="link">Desigining in Minecraft</a>
       </li>
     </ul>
   </main>
@@ -93,54 +50,43 @@ import Layout from "../layouts/Layout.astro";
 <style>
   main {
     max-width: 700px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
     margin-bottom: 30px;
     margin-top: 30px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
   }
 
   h1 {
     font-weight: normal;
+    font-size: 14px;
+  }
+  
+  h2 {
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 25px;
+  }
+
+  a {
+    text-decoration: underline;
+    color: black;
+    text-underline-offset: 2px;
+  }
+
+  .essays {
+    list-style-type: none;
+    margin-left: -40px;
+  }
+
+  li {
+    margin-bottom: 10px; /* adjust as needed */
   }
 
   @media (min-width: 1024px) {
     main {
       margin: 100px;
     }
-  }
-
-  .link {
-    text-decoration: underline;
-    text-underline-offset: 2px;
-    color: black;
-  }
-
-  .socials {
-    display: flex;
-    gap: 20px;
-    margin-top: 30px;
-  }
-
-  .previously {
-    margin-top: 30px;
-  }
-
-  .prev-list {
-    margin-left: -10px;
-  }
-
-  .notebook {
-    margin-top: 30px;
-  }
-
-  .blogs {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    text-decoration: none;
-    list-style: none;
-    margin-left: -40px;
   }
 </style>

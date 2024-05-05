@@ -19,41 +19,63 @@ import Layout from "../layouts/Layout.astro";
     </p>
     <h2>Let's Connect:</h2>
     <ul>
-      <li>
+      <li class="sociallist">
         <a href="mailto:bermudo.elumba@gmail.com" class="link" target="_blank"
           >Email</a
         >
       </li>
-      <li>
+      <li class="sociallist">
         <a href="https://twitter.com/jcebermudo" class="link" target="_blank"
-          >Twitter</a>
+          >Twitter</a
+        >
       </li>
-      <li>
+      <li class="sociallist">
         <a
           href="https://www.linkedin.com/in/jcebermudo/"
           class="link"
-          target="_blank">LinkedIn</a>
+          target="_blank">LinkedIn</a
+        >
       </li>
     </ul>
     <h2>Essays:</h2>
-    <ul class="essays">
-      <li>
-        <a href="/posts/post-5/" class="link">I'm building Alan</a>
-      </li>
-      <li>
-        <a href="/posts/post-4/" class="link">Using GPT-3 to Pitch My Startup</a
-        >
-      </li>
-      <li>
-        <a href="/posts/post-3/" class="link">Young Founders Summit</a>
-      </li>
-      <li>
-        <a href="/posts/post-2/" class="link">16</a>
-      </li>
-      <li>
-        <a href="/posts/post-1/" class="link">Desigining in Minecraft</a>
-      </li>
-    </ul>
+
+    <div class="essay-container">
+      <p>2024</p>
+      <ul class="essays">
+        <li class="essaylinks">
+          <p class="date">May 5 —</p>
+          <a href="/posts/post-6/" class="link">The Clueless Misfit</a>
+        </li>
+      </ul>
+      <p>2023</p>
+      <ul class="essays">
+        <li class="essaylinks">
+          <p class="date">January 15 —</p>
+          <a href="/posts/post-5/" class="link">I'm building Alan</a>
+        </li>
+        <li class="essaylinks">
+          <p class="date">January 3 —</p>
+          <a href="/posts/post-4/" class="link"
+            >Using GPT-3 to Pitch My Startup</a
+          >
+        </li>
+      </ul>
+      <p>2022</p>
+      <ul class="essays">
+        <li class="essaylinks">
+          <p class="date">December 17 —</p>
+          <a href="/posts/post-3/" class="link">Young Founders Summit</a>
+        </li>
+        <li class="essaylinks">
+          <p class="date">July 18 —</p>
+          <a href="/posts/post-2/" class="link">16</a>
+        </li>
+        <li class="essaylinks">
+          <p class="date">July 7 —</p>
+          <a href="/posts/post-1/" class="link">Designing in Minecraft</a>
+        </li>
+      </ul>
+    </div>
   </main>
 </Layout>
 
@@ -88,10 +110,30 @@ import Layout from "../layouts/Layout.astro";
   .essays {
     list-style-type: none;
     margin-left: -40px;
+    margin-top: 10px;
   }
 
-  li {
-    margin-bottom: 10px; /* adjust as needed */
+  .link {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .essaylinks {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .date {
+    color: rgb(123, 123, 123);
+  }
+
+  .sociallist {
+    margin-bottom: 20px; /* adjust as needed */
+  }
+
+  .essay-container {
+    margin-top: 30px;
   }
 
   @media (min-width: 1024px) {

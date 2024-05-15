@@ -10,14 +10,58 @@ import Layout from "../layouts/Layout.astro";
   pageImg="none"
 >
   <main>
-    <h1>
-      I'm a 17 year old designer and founder from Manila. I'm currently running <a
-        href="https://interval.software"
-        target="_blank">Internet Details</a
-      >, a design agency for early-stage startups. I also build internet
-      software on the side and write about design and startups. All while
-      finishing high school.
-    </h1>
+    <h1><a class="homelink" href="/">James Bermudo</a></h1>
+    <div class="about-content">
+      <ul>
+        <li>
+          I'm a designer obsessed with crafting beautiful internet software
+        </li>
+        <li>Still a 17 y.o. in highschool building things in my room</li>
+        <li>
+          Running a tiny design studio called <img class="idicon" src="./public/images/icons/internetdetails.svg" alt="logo"> <a
+            href="https://internetdetails.com">Internet Details</a
+          >
+        </li>
+        <li>
+          Currently an intern at <a href="https://swarm.work">Swarm</a>
+        </li>
+      </ul>
+    </div>
+    <div class="links">
+          <ul class="listlinks">
+            <li class="sociallist">
+              <a
+                href="mailto:james@internetdetails.com"
+                class="link"
+                target="_blank">Email</a
+              >
+            </li>
+            <li class="sociallist">
+              <a
+                href="https://twitter.com/jcebermudo"
+                class="link"
+                target="_blank">Twitter</a
+              >
+            </li>
+            <li class="sociallist">
+              <a
+                href="https://www.linkedin.com/in/jcebermudo/"
+                class="link"
+                target="_blank">LinkedIn</a
+              >
+            </li>
+            <li class="sociallist">
+              <a
+                href="https://www.github.com/jcebermudo"
+                class="link"
+                target="_blank">GitHub</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="divider">
     <h2>Posts:</h2>
     <div class="essay-container">
       <ul class="essays">
@@ -53,13 +97,44 @@ import Layout from "../layouts/Layout.astro";
 
   <style>
     main {
-      font-size: 20px;
+      font-size: 16px;
       font-weight: normal;
     }
 
-    h1, h2 {
+    .homelink {
+      text-decoration: none;
+    }
+
+    h1,
+    h2 {
       font-weight: normal;
-      font-size: 20px;
+      font-size: 16px;
+      margin-top: 30px;
+    }
+
+    .about-content {
+      margin-top: 30px;
+      margin-left: -10px;
+    }
+
+    .links {
+      margin-top: 30px;
+    }
+
+     .listlinks {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+  }
+
+    .essaylinks {
+      margin
+    }
+
+    .divider {
+      border-top: 2px dashed rgb(123, 123, 123);
       margin-top: 30px;
     }
 
@@ -69,11 +144,6 @@ import Layout from "../layouts/Layout.astro";
       display: flex;
       flex-direction: column;
       gap: 25px;
-    }
-
-    .link {
-      text-decoration: underline;
-      text-underline-offset: 2px;
     }
 
     .essaylinks {
@@ -87,6 +157,13 @@ import Layout from "../layouts/Layout.astro";
 
     .essay-container {
       margin-top: 15px;
+    }
+
+    .idicon {
+      width: 15px;
+      height: 15px;
+      margin-bottom: -2px;
+      user-select: none;
     }
   </style>
 </Layout>

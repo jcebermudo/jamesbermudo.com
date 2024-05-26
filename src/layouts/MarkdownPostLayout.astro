@@ -11,18 +11,54 @@ const { frontmatter } = Astro.props;
   pageImg={frontmatter.image}
 >
   <main>
+    <a class="homelink" href="/">James Bermudo</a>
     <h1>{frontmatter.title}</h1>
     <p class="date">{frontmatter.date}</p>
     <img src={frontmatter.image} alt="blog-image" />
     <div class="content">
       <slot />
     </div>
+    <hr class="divider">
+    <div class="links">
+      <ul class="listlinks">
+        <li class="sociallist">
+          <a
+            href="mailto:james@internetdetails.com"
+            class="link"
+            target="_blank">Email</a
+          >
+        </li>
+        <li class="sociallist">
+          <a href="https://twitter.com/jcebermudo" class="link" target="_blank"
+            >Twitter</a
+          >
+        </li>
+        <li class="sociallist">
+          <a
+            href="https://www.linkedin.com/in/jcebermudo/"
+            class="link"
+            target="_blank">LinkedIn</a
+          >
+        </li>
+        <li class="sociallist">
+          <a
+            href="https://www.github.com/jcebermudo"
+            class="link"
+            target="_blank">GitHub</a
+          >
+        </li>
+      </ul>
+    </div>
   </main>
 </Layout>
 
 <style>
+  .homelink {
+    text-decoration: none;
+  }
   main {
-    max-width: 800px;
+    margin-top: 5%;
+    margin-bottom: 10%;
     font-weight: normal;
     color: black;
   }
@@ -34,7 +70,7 @@ const { frontmatter } = Astro.props;
 
   h1 {
     color: black;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: normal;
     margin-top: 40px;
   }
@@ -52,7 +88,7 @@ const { frontmatter } = Astro.props;
 
   .content {
     margin-top: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     font-size: 16px;
   }
 
@@ -70,5 +106,21 @@ const { frontmatter } = Astro.props;
     width: 100%;
     height: auto;
     margin-top: 30px;
+  }
+
+  .links {
+    margin-top: 30px;
+  }
+
+  .listlinks {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+  }
+
+  .divider {
+    border-top: 2px dashed rgb(123, 123, 123);
   }
 </style>

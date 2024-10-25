@@ -68,7 +68,19 @@ export default function Home() {
             transition={{ duration: 0.41, type: "spring", delay: 0.2 }}
             whileHover={{ y: -2 }}
           >
-            <a href="https://dribbble.com/jcebermudo">Dribbble</a>
+            <a href="mailto:bermudo.elumba@gmail.com" target="_blank">
+              Email
+            </a>
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0, y: 25 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.41, type: "spring", delay: 0.2 }}
+            whileHover={{ y: -2 }}
+          >
+            <a href="https://dribbble.com/jcebermudo" target="_blank">
+              Dribbble
+            </a>
           </motion.li>
           <motion.li
             initial={{ opacity: 0, y: 25 }}
@@ -76,7 +88,9 @@ export default function Home() {
             transition={{ duration: 0.41, type: "spring", delay: 0.23 }}
             whileHover={{ y: -2 }}
           >
-            <a href="https://twitter.com/jcebermudo">Twitter</a>
+            <a href="https://twitter.com/jcebermudo" target="_blank">
+              Twitter
+            </a>
           </motion.li>
           <motion.li
             initial={{ opacity: 0, y: 25 }}
@@ -84,7 +98,9 @@ export default function Home() {
             transition={{ duration: 0.41, type: "spring", delay: 0.23 }}
             whileHover={{ y: -2 }}
           >
-            <a href="https://linkedin.com/in/jcebermudo">LinkedIn</a>
+            <a href="https://linkedin.com/in/jcebermudo" target="_blank">
+              LinkedIn
+            </a>
           </motion.li>
         </ul>
       </div>

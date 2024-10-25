@@ -10,7 +10,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 25 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.41, type: "spring", delay: 0 }}
-              style={{ width: "37px", height: "47px" }}
+              style={{ width: "37px", height: "44.4px" }}
               width="40"
               height="24"
               viewBox="0 0 20 24"

@@ -3,7 +3,7 @@ import * as motion from "framer-motion/client";
 export default function Home() {
   return (
     <div className=" overflow-x-hidden flex justify-center md:items-center min-h-screen text-[16px]">
-      <div className="main flex flex-col gap-[20px] max-w-[500px] mx-[30px] mt-[50px] md:mx-[0px] md:mt-0">
+      <div className="main flex flex-col gap-[20px] max-w-[500px] mx-[30px] mt-[70px] md:mx-[0px] md:mt-0">
         <div className="flex flex-col">
           <div className="mb-1 translate-x-[6px]">
             <motion.svg

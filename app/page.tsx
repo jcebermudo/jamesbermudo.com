@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 
 export default function Home() {
   return (
-    <div className="w-full h-screen flex flex-col items-center justify-center selection:bg-[#26252A] selection:text-white p-[30px]">
+    <div className="overflow-x-hidden overflow-y-auto w-full h-screen flex flex-col items-center justify-center selection:bg-[#26252A] selection:text-white p-[30px]">
       <div className="flex flex-col items-center justify-center gap-[10px] max-w-[450px] w-full">
         <motion.div
           initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
@@ -154,24 +154,26 @@ export default function Home() {
             stiffness: 100,
             delay: 1,
           }}
-          className="w-full flex flex-row gap-[10px] items-center justify-center"
+          className="w-full flex flex-row gap-[5px] items-center justify-center"
         >
           <hr className="w-full border-t-[1px] border-dashed border-[#C3C3C3] my-[20px]" />
-          <p className="select-none text-[16px] w-full text-center font-medium text-[#9F9F9F]">
+          <p className="select-none text-[15px] w-full min-w-[170px] text-center font-medium text-[#9F9F9F]">
             Things I've worked on
           </p>
           <hr className="w-full border-t-[1px] border-dashed border-[#C3C3C3] my-[20px]" />
         </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
+        <motion.div initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
           transition={{
             duration: 0.4,
             type: "spring",
             stiffness: 100,
             delay: 1.1,
-          }}
-          className="w-full flex flex-col gap-[5px] items-start justify-start p-[20px] bg-white rounded-[10px] outline-[1px] outline-[#D9D9D9] drop-shadow-[0px_2px_1px_rgba(0,0,0,0.1)]"
+          }}>
+        <Link
+          href="https://extensionideas.com"
+          target="_blank"
+          className="w-full flex flex-col gap-[5px] items-start justify-start p-[20px] bg-white rounded-[10px] outline-[1px] outline-[#D9D9D9] drop-shadow-[0px_1px_0.8px_rgba(0,0,0,0.1)] hover:translate-y-[-2px] transition-all duration-300"
         >
           <h2 className="font-bold text-[16px]">Extension Ideas</h2>
           <span className="italic text-[14px] text-[#60606C]">
@@ -180,6 +182,7 @@ export default function Home() {
           <p className="text-[16px] font-normal">
             Find winning Chrome extension ideas from user reviews.
           </p>
+        </Link>
         </motion.div>
       </div>
     </div>

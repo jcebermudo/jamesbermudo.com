@@ -9,7 +9,11 @@ const myFont = localFont({
 export const metadata: Metadata = {
   title: "James Bermudo",
   description: "Smol internet corner.",
+  icons: {
+    icon: "/icons/favicon.ico",
+  },
 };
+
 
 export default function RootLayout({
   children,

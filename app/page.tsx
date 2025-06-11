@@ -252,7 +252,7 @@ export default function Home() {
         >
           <hr className="w-full border-t-[1px] border-dashed border-[#C3C3C3] my-[20px]" />
           <p className="select-none text-[15px] w-full min-w-[170px] text-center font-medium text-[#9F9F9F]">
-            Things I've worked on
+            Things I&apos;ve worked on
           </p>
           <hr className="w-full border-t-[1px] border-dashed border-[#C3C3C3] my-[20px]" />
         </motion.div>

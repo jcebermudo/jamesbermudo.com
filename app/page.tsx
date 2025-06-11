@@ -12,7 +12,8 @@ export default function Home() {
           initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
           transition={{ duration: 0.4, type: "spring", stiffness: 100 }}
-        >
+        > 
+         
           <Image
             className="select-none rounded-[10px]"
             src="/images/pfp.png"

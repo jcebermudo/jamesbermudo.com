@@ -139,7 +139,7 @@ export default function Home() {
           }}
           className="text-[16px] font-medium max-w-[200px] text-center"
         >
-          I'm a CS student building and designing apps.
+          I&apos;m a CS student building and designing apps.
         </motion.p>
         <div className="flex flex-row gap-[5px]">
           <motion.div

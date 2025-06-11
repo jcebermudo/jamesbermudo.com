@@ -9,9 +9,9 @@ export default function Home() {
     <div className="w-full h-screen flex flex-col items-center justify-center selection:bg-[#26252A] selection:text-white">
       <div className="flex flex-col items-center justify-center gap-[10px]">
         <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
+          animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
         >
           <Image
             className="select-none rounded-[10px]"
@@ -21,24 +21,48 @@ export default function Home() {
             height={80}
           />
         </motion.div>
-        <h1 className="text-[16px] font-bold">James Bermudo</h1>
-        <p className="text-[16px] font-medium max-w-[200px] text-center">
+        <motion.h1
+          initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
+          animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+          className="text-[16px] font-bold"
+        >
+          James Bermudo
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
+          animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.4 }}
+          className="text-[16px] font-medium max-w-[200px] text-center"
+        >
           I'm a CS student building and designing apps.
-        </p>
-        <div className="flex flex-row gap-[5px]">
-          <Link
-            href="https://github.com/jcebermudo"
-            target="_blank"
-            className=" cursor-pointer w-[40px] h-[40px] bg-white rounded-[10px] outline-[1px] outline-[#D9D9D9] drop-shadow-[0px_2px_1px_rgba(0,0,0,0.09)] flex flex-col items-center justify-center hover:translate-y-[-2px] transition-all duration-300"
-          >
-            <Image
-              className="select-none"
-              src="/icons/github.svg"
-              alt="Github"
-              width={20}
-              height={16}
-            />
-          </Link>
+        </motion.p>
+        <div
+          
+          className="flex flex-row gap-[5px]"
+        >
+          <motion.div
+          initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
+          animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.6 }}>
+            <Link
+              href="https://github.com/jcebermudo"
+              target="_blank"
+              className=" cursor-pointer w-[40px] h-[40px] bg-white rounded-[10px] outline-[1px] outline-[#D9D9D9] drop-shadow-[0px_2px_1px_rgba(0,0,0,0.09)] flex flex-col items-center justify-center hover:translate-y-[-2px] transition-all duration-300"
+            >
+              <Image
+                className="select-none"
+                src="/icons/github.svg"
+                alt="Github"
+                width={20}
+                height={16}
+              />
+            </Link>
+          </motion.div>
+          <motion.div
+          initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
+          animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.7 }}>
           <Link
             href="https://x.com/jcebermudo"
             target="_blank"
@@ -52,6 +76,11 @@ export default function Home() {
               height={14}
             />
           </Link>
+          </motion.div>
+          <motion.div
+          initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
+          animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.8 }}> 
           <Link
             href="https://www.linkedin.com/in/jcebermudo/"
             target="_blank"
@@ -65,6 +94,11 @@ export default function Home() {
               height={16}
             />
           </Link>
+          </motion.div>
+          <motion.div
+          initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
+          animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.9 }}> 
           <Link
             href="mailto:jcebermudo@gmail.com"
             target="_blank"
@@ -78,6 +112,7 @@ export default function Home() {
               height={14}
             />
           </Link>
+          </motion.div>
         </div>
       </div>
     </div>

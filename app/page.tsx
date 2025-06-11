@@ -6,12 +6,12 @@ import { motion } from "motion/react";
 
 export default function Home() {
   return (
-    <div className="w-full h-screen flex flex-col items-center justify-center selection:bg-[#26252A] selection:text-white">
-      <div className="flex flex-col items-center justify-center gap-[10px]">
+    <div className="w-full h-screen flex flex-col items-center justify-center selection:bg-[#26252A] selection:text-white p-[30px]">
+      <div className="flex flex-col items-center justify-center gap-[10px] max-w-[500px] w-full">
         <motion.div
           initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
+          transition={{ duration: 0.4, type: "spring", stiffness: 100 }}
         >
           <Image
             className="select-none rounded-[10px]"
@@ -24,7 +24,12 @@ export default function Home() {
         <motion.h1
           initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
-          transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+          transition={{
+            duration: 0.4,
+            type: "spring",
+            stiffness: 100,
+            delay: 0.2,
+          }}
           className="text-[16px] font-bold"
         >
           James Bermudo
@@ -32,19 +37,27 @@ export default function Home() {
         <motion.p
           initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
-          transition={{ duration: 0.7, ease: "easeOut", delay: 0.4 }}
+          transition={{
+            duration: 0.4,
+            type: "spring",
+            stiffness: 100,
+            delay: 0.4,
+          }}
           className="text-[16px] font-medium max-w-[200px] text-center"
         >
           I'm a CS student building and designing apps.
         </motion.p>
-        <div
-          
-          className="flex flex-row gap-[5px]"
-        >
+        <div className="flex flex-row gap-[5px]">
           <motion.div
-          initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
-          animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
-          transition={{ duration: 0.7, ease: "easeOut", delay: 0.6 }}>
+            initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
+            animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
+            transition={{
+              duration: 0.4,
+              type: "spring",
+              stiffness: 100,
+              delay: 0.6,
+            }}
+          >
             <Link
               href="https://github.com/jcebermudo"
               target="_blank"
@@ -60,60 +73,110 @@ export default function Home() {
             </Link>
           </motion.div>
           <motion.div
-          initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
-          animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
-          transition={{ duration: 0.7, ease: "easeOut", delay: 0.7 }}>
-          <Link
-            href="https://x.com/jcebermudo"
-            target="_blank"
-            className=" cursor-pointer w-[40px] h-[40px] bg-white rounded-[10px] outline-[1px] outline-[#D9D9D9] drop-shadow-[0px_2px_1px_rgba(0,0,0,0.09)] flex flex-col items-center justify-center hover:translate-y-[-2px] transition-all duration-300"
+            initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
+            animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
+            transition={{
+              duration: 0.4,
+              type: "spring",
+              stiffness: 100,
+              delay: 0.7,
+            }}
           >
-            <Image
-              className="cursor-pointer select-none"
-              src="/icons/x.svg"
-              alt="X"
-              width={20}
-              height={14}
-            />
-          </Link>
+            <Link
+              href="https://x.com/jcebermudo"
+              target="_blank"
+              className=" cursor-pointer w-[40px] h-[40px] bg-white rounded-[10px] outline-[1px] outline-[#D9D9D9] drop-shadow-[0px_2px_1px_rgba(0,0,0,0.09)] flex flex-col items-center justify-center hover:translate-y-[-2px] transition-all duration-300"
+            >
+              <Image
+                className="cursor-pointer select-none"
+                src="/icons/x.svg"
+                alt="X"
+                width={20}
+                height={14}
+              />
+            </Link>
           </motion.div>
           <motion.div
-          initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
-          animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
-          transition={{ duration: 0.7, ease: "easeOut", delay: 0.8 }}> 
-          <Link
-            href="https://www.linkedin.com/in/jcebermudo/"
-            target="_blank"
-            className=" cursor-pointer w-[40px] h-[40px] bg-white rounded-[10px] outline-[1px] outline-[#D9D9D9] drop-shadow-[0px_2px_1px_rgba(0,0,0,0.09)] flex flex-col items-center justify-center hover:translate-y-[-2px] transition-all duration-300"
+            initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
+            animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
+            transition={{
+              duration: 0.4,
+              type: "spring",
+              stiffness: 100,
+              delay: 0.8,
+            }}
           >
-            <Image
-              className="cursor-pointer select-none"
-              src="/icons/linkedin.svg"
-              alt="LinkedIn"
-              width={20}
-              height={16}
-            />
-          </Link>
+            <Link
+              href="https://www.linkedin.com/in/jcebermudo/"
+              target="_blank"
+              className=" cursor-pointer w-[40px] h-[40px] bg-white rounded-[10px] outline-[1px] outline-[#D9D9D9] drop-shadow-[0px_2px_1px_rgba(0,0,0,0.09)] flex flex-col items-center justify-center hover:translate-y-[-2px] transition-all duration-300"
+            >
+              <Image
+                className="cursor-pointer select-none"
+                src="/icons/linkedin.svg"
+                alt="LinkedIn"
+                width={20}
+                height={16}
+              />
+            </Link>
           </motion.div>
           <motion.div
-          initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
-          animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
-          transition={{ duration: 0.7, ease: "easeOut", delay: 0.9 }}> 
-          <Link
-            href="mailto:jcebermudo@gmail.com"
-            target="_blank"
-            className=" cursor-pointer w-[40px] h-[40px] bg-white rounded-[10px] outline-[1px] outline-[#D9D9D9] drop-shadow-[0px_2px_1px_rgba(0,0,0,0.09)] flex flex-col items-center justify-center hover:translate-y-[-2px] transition-all duration-300"
+            initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
+            animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
+            transition={{
+              duration: 0.4,
+              type: "spring",
+              stiffness: 100,
+              delay: 0.9,
+            }}
           >
-            <Image
-              className="cursor-pointer select-none"
-              src="/icons/email.svg"
-              alt="Email"
-              width={20}
-              height={14}
-            />
-          </Link>
+            <Link
+              href="mailto:jcebermudo@gmail.com"
+              target="_blank"
+              className=" cursor-pointer w-[40px] h-[40px] bg-white rounded-[10px] outline-[1px] outline-[#D9D9D9] drop-shadow-[0px_2px_1px_rgba(0,0,0,0.09)] flex flex-col items-center justify-center hover:translate-y-[-2px] transition-all duration-300"
+            >
+              <Image
+                className="cursor-pointer select-none"
+                src="/icons/email.svg"
+                alt="Email"
+                width={20}
+                height={14}
+              />
+            </Link>
           </motion.div>
         </div>
+        <motion.div
+          initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
+          animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
+          transition={{
+            duration: 0.4,
+            type: "spring",
+            stiffness: 100,
+            delay: 1,
+          }}
+          className="w-full flex flex-row gap-[10px] items-center justify-center">
+          <hr className="w-full border-t-[1px] border-dashed border-[#C3C3C3] my-[20px]" />
+          <p className="select-none text-[16px] w-full text-center font-medium text-[#9F9F9F]">
+            Things I've worked on
+          </p>
+          <hr className="w-full border-t-[1px] border-dashed border-[#C3C3C3] my-[20px]" />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
+          animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
+          transition={{
+            duration: 0.4,
+            type: "spring",
+            stiffness: 100,
+            delay: 1.1,
+          }}
+          className="w-full flex flex-row gap-[10px] items-center justify-center">
+          <div className="w-full flex flex-row gap-[10px] items-center justify-center">
+            <p className="text-[16px] font-medium">
+              Built with ❤️ by James Bermudo
+            </p>
+          </div>
+        </motion.div>
       </div>
     </div>
   );

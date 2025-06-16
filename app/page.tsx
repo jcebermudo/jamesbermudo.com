@@ -14,7 +14,6 @@ export default function Home() {
           transition={{ duration: 0.4, type: "spring", stiffness: 100 }}
           className="relative"
         >
-          
           <Image
             className="select-none rounded-full"
             src="/images/pfp.png"
@@ -147,6 +146,7 @@ export default function Home() {
             </Link>
           </motion.div>
         </div>
+        {/* Projects 
         <motion.div
           initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
@@ -188,6 +188,7 @@ export default function Home() {
             </p>
           </Link>
         </motion.div>
+              */}
       </div>
     </div>
   );

@@ -1,19 +1,14 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 
-const myFont = localFont({
-  src: "../public/fonts/Satoshi-Variable.ttf",
-});
-
 export const metadata: Metadata = {
-  title: "James Bermudo",
-  description: "Smol internet corner.",
+  title: "The Playground — James Bermudo",
+  description:
+    "A research log on AI, Math, and Experiments by James Bermudo.",
   icons: {
     icon: "/icons/favicon.ico",
   },
 };
-
 
 export default function RootLayout({
   children,
@@ -22,11 +17,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${myFont.className} antialiased`}
-      >
-        {children}
-      </body>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,400&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }

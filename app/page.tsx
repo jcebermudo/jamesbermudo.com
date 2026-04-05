@@ -1,195 +1,98 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "motion/react";
+import { getAllPosts } from "@/lib/posts";
+import CategoryFilter from "./components/CategoryFilter";
+import AnimationWrapper from "./components/AnimationWrapper";
+
+const SOCIAL_LINKS = [
+  {
+    href: "https://github.com/jcebermudo",
+    icon: "/icons/github.svg",
+    alt: "GitHub",
+    size: { w: 20, h: 16 },
+  },
+  {
+    href: "https://x.com/jcebermudo",
+    icon: "/icons/x.svg",
+    alt: "X",
+    size: { w: 20, h: 14 },
+  },
+  {
+    href: "https://www.linkedin.com/in/jcebermudo/",
+    icon: "/icons/linkedin.svg",
+    alt: "LinkedIn",
+    size: { w: 20, h: 16 },
+  },
+  {
+    href: "mailto:jcebermudo@gmail.com",
+    icon: "/icons/email.svg",
+    alt: "Email",
+    size: { w: 20, h: 14 },
+  },
+];
 
 export default function Home() {
+  const posts = getAllPosts();
+
   return (
-    <div className="overflow-x-hidden overflow-y-auto w-full h-screen flex flex-col items-center justify-center selection:bg-[#26252A] selection:text-white p-[30px]">
-      <div className="flex flex-col items-center justify-center gap-[10px] max-w-[450px] w-full">
-        <motion.div
-          initial={{ opacity: 0, y: 40, scale: 0.9 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 0.4, type: "spring", stiffness: 100 }}
-          className="relative"
-        >
+    <main className="min-h-screen px-6 py-20 max-w-[720px] mx-auto">
+      <AnimationWrapper>
+        {/* Profile */}
+        <div className="mb-12">
           <Image
-            className="select-none rounded-full"
             src="/images/pfp.png"
-            alt="Logo"
-            width={80}
-            height={80}
+            alt="James Bermudo"
+            width={40}
+            height={40}
+            className="rounded-full mb-4 select-none"
           />
-        </motion.div>
-        <motion.h1
-          initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
-          animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
-          transition={{
-            duration: 0.4,
-            type: "spring",
-            stiffness: 100,
-            delay: 0.2,
-          }}
-          className="text-[16px] font-bold"
-        >
-          James Bermudo
-        </motion.h1>
-        <motion.p
-          initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
-          animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
-          transition={{
-            duration: 0.4,
-            type: "spring",
-            stiffness: 100,
-            delay: 0.4,
-          }}
-          className="text-[16px] font-medium max-w-[200px] text-center"
-        >
-          I&apos;m a CS student building and designing apps.
-        </motion.p>
-        <div className="flex flex-row gap-[5px]">
-          <motion.div
-            initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
-            animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
-            transition={{
-              duration: 0.4,
-              type: "spring",
-              stiffness: 100,
-              delay: 0.6,
-            }}
-          >
-            <Link
-              href="https://github.com/jcebermudo"
+          <h1 className="text-[2rem] font-normal leading-tight mb-3">
+            The Playground
+          </h1>
+          <p className="text-[0.9375rem] text-[var(--fg-muted)] leading-relaxed mb-4 max-w-[480px]">
+            James Bermudo. CS student at ADMU, SWE intern at{" "}
+            <a
+              href="https://anycase.ai"
               target="_blank"
-              className=" cursor-pointer w-[40px] h-[40px] bg-white rounded-[10px] outline-[1px] outline-[#D9D9D9] drop-shadow-[0px_2px_1px_rgba(0,0,0,0.09)] flex flex-col items-center justify-center hover:translate-y-[-2px] transition-all duration-300"
+              rel="noopener noreferrer"
+              className="text-[var(--fg)] underline underline-offset-2 decoration-[var(--fg-subtle)] hover:decoration-[var(--fg)] transition-colors"
             >
-              <Image
-                className="select-none"
-                src="/icons/github.svg"
-                alt="Github"
-                width={20}
-                height={16}
-              />
-            </Link>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
-            animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
-            transition={{
-              duration: 0.4,
-              type: "spring",
-              stiffness: 100,
-              delay: 0.7,
-            }}
-          >
-            <Link
-              href="https://x.com/jcebermudo"
-              target="_blank"
-              className=" cursor-pointer w-[40px] h-[40px] bg-white rounded-[10px] outline-[1px] outline-[#D9D9D9] drop-shadow-[0px_2px_1px_rgba(0,0,0,0.09)] flex flex-col items-center justify-center hover:translate-y-[-2px] transition-all duration-300"
-            >
-              <Image
-                className="cursor-pointer select-none"
-                src="/icons/x.svg"
-                alt="X"
-                width={20}
-                height={14}
-              />
-            </Link>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
-            animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
-            transition={{
-              duration: 0.4,
-              type: "spring",
-              stiffness: 100,
-              delay: 0.8,
-            }}
-          >
-            <Link
-              href="https://www.linkedin.com/in/jcebermudo/"
-              target="_blank"
-              className=" cursor-pointer w-[40px] h-[40px] bg-white rounded-[10px] outline-[1px] outline-[#D9D9D9] drop-shadow-[0px_2px_1px_rgba(0,0,0,0.09)] flex flex-col items-center justify-center hover:translate-y-[-2px] transition-all duration-300"
-            >
-              <Image
-                className="cursor-pointer select-none"
-                src="/icons/linkedin.svg"
-                alt="LinkedIn"
-                width={20}
-                height={16}
-              />
-            </Link>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
-            animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
-            transition={{
-              duration: 0.4,
-              type: "spring",
-              stiffness: 100,
-              delay: 0.9,
-            }}
-          >
-            <Link
-              href="mailto:jcebermudo@gmail.com"
-              target="_blank"
-              className=" cursor-pointer w-[40px] h-[40px] bg-white rounded-[10px] outline-[1px] outline-[#D9D9D9] drop-shadow-[0px_2px_1px_rgba(0,0,0,0.09)] flex flex-col items-center justify-center hover:translate-y-[-2px] transition-all duration-300"
-            >
-              <Image
-                className="cursor-pointer select-none"
-                src="/icons/email.svg"
-                alt="Email"
-                width={20}
-                height={14}
-              />
-            </Link>
-          </motion.div>
-        </div>
-        {/* Projects 
-        <motion.div
-          initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
-          animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
-          transition={{
-            duration: 0.4,
-            type: "spring",
-            stiffness: 100,
-            delay: 1,
-          }}
-          className="w-full flex flex-row gap-[5px] items-center justify-center"
-        >
-          <hr className="w-full border-t-[1px] border-dashed border-[#C3C3C3] my-[20px]" />
-          <p className="select-none text-[15px] w-full min-w-[170px] text-center font-medium text-[#9F9F9F]">
-            Things I&apos;ve worked on
+              Anycase.ai
+            </a>
+            . Interested in LLMs, AI, and Math.
           </p>
-          <hr className="w-full border-t-[1px] border-dashed border-[#C3C3C3] my-[20px]" />
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 40, filter: "blur(10px)", scale: 0.9 }}
-          animate={{ opacity: 1, y: 0, filter: "blur(0px)", scale: 1 }}
-          transition={{
-            duration: 0.4,
-            type: "spring",
-            stiffness: 100,
-            delay: 1.1,
-          }}
-        >
-          <Link
-            href="https://extensionideas.com"
-            target="_blank"
-            className="w-full flex flex-col gap-[5px] items-start justify-start p-[20px] bg-white rounded-[10px] outline-[1px] outline-[#D9D9D9] drop-shadow-[0px_1px_0.8px_rgba(0,0,0,0.1)] hover:translate-y-[-2px] transition-all duration-300"
-          >
-            <h2 className="font-bold text-[16px]">Extension Ideas</h2>
-            <span className="italic text-[14px] text-[#60606C]">
-              extensionideas.com
-            </span>
-            <p className="text-[16px] font-normal">
-              Find winning Chrome extension ideas from user reviews.
-            </p>
-          </Link>
-        </motion.div>
-              */}
-      </div>
-    </div>
+
+          {/* Social links */}
+          <div className="flex gap-3">
+            {SOCIAL_LINKS.map((link) => (
+              <Link
+                key={link.alt}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="opacity-50 hover:opacity-100 transition-opacity"
+                aria-label={link.alt}
+              >
+                <Image
+                  src={link.icon}
+                  alt={link.alt}
+                  width={link.size.w}
+                  height={link.size.h}
+                  className="select-none"
+                />
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* Writing section */}
+        <div>
+          <p className="font-mono text-[0.75rem] uppercase tracking-wider text-[var(--fg-muted)] mb-5">
+            Writing
+          </p>
+          <CategoryFilter posts={posts} />
+        </div>
+      </AnimationWrapper>
+    </main>
   );
 }

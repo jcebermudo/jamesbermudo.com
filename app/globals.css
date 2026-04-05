@@ -1,26 +1,50 @@
 @import "tailwindcss";
 
-:root {
-  --background: #F9F9F9;
-  --foreground: #26252A;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-fg-muted: #6b6b6b;
+  --color-fg-subtle: #c0c0c0;
+  --color-code-bg: #f0f0f0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #F9F9F9;
-    --foreground: #26252A;
-  }
+:root {
+  --bg: #f9f9f9;
+  --fg: #1a1a1a;
+  --fg-muted: #6b6b6b;
+  --fg-subtle: #c0c0c0;
+  --code-bg: #f0f0f0;
+  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-mono: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-serif);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-serif);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--fg);
+  color: var(--bg);
+}
+
+/* rehype-pretty-code overrides */
+[data-rehype-pretty-code-figure] pre {
+  background: var(--code-bg) !important;
+  border-radius: 0.5rem;
+}
+
+[data-line] {
+  padding: 0 1rem;
 }

@@ -1,50 +1,26 @@
 @import "tailwindcss";
 
-@theme inline {
-  --color-fg-muted: #6b6b6b;
-  --color-fg-subtle: #c0c0c0;
-  --color-code-bg: #f0f0f0;
-}
-
 :root {
-  --bg: #f9f9f9;
-  --fg: #1a1a1a;
-  --fg-muted: #6b6b6b;
-  --fg-subtle: #c0c0c0;
-  --code-bg: #f0f0f0;
-  --font-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
-  --font-mono: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, monospace;
+  --background: #ffffff;
+  --foreground: #171717;
 }
 
-* {
-  box-sizing: border-box;
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
 }
 
-html {
-  background: var(--bg);
-  color: var(--fg);
-  font-family: var(--font-serif);
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
 }
 
 body {
-  background: var(--bg);
-  color: var(--fg);
-  font-family: var(--font-serif);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-::selection {
-  background: var(--fg);
-  color: var(--bg);
-}
-
-/* rehype-pretty-code overrides */
-[data-rehype-pretty-code-figure] pre {
-  background: var(--code-bg) !important;
-  border-radius: 0.5rem;
-}
-
-[data-line] {
-  padding: 0 1rem;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
 }

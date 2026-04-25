@@ -23,7 +23,12 @@ export default function Home() {
             This is a small corner of the internet where I write my learning
             notes on math, AI, and other things that interest me. I started
             this blog to teach myself the concepts I need for AI research and
-            engineering.
+            engineering. Researchers like{" "}
+            <a href="https://ljvmiranda921.github.io/" className="underline" target="_blank" rel="noopener noreferrer">LJ Miranda</a>,{" "}
+            <a href="https://lilianweng.github.io/" className="underline" target="_blank" rel="noopener noreferrer">Lillian Weng</a>{" "}
+            and{" "}
+            <a href="https://kexue.fm/" className="underline" target="_blank" rel="noopener noreferrer">Jianlin Su</a>{" "}
+            have been my main inspirations for this blog.
           </p>
           <p>
             I&apos;m a software engineer at{" "}

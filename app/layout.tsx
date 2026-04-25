@@ -8,14 +8,14 @@ const sourceSerif4 = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  title: "Playground Log — James Bermudo",
+  title: "Playground Log | James Bermudo",
   description:
-    "A small corner of the internet where James Bermudo writes learning notes on math, AI, and other things that interest him.",
+    "A small corner of the internet where I dump my learning notes on math, AI, and other things that interest me.",
   metadataBase: new URL("https://jamesbermudo.com"),
   openGraph: {
-    title: "Playground Log — James Bermudo",
+    title: "Playground Log | James Bermudo",
     description:
-      "A small corner of the internet where James Bermudo writes learning notes on math, AI, and other things that interest him.",
+      "A small corner of the internet where I dump my learning notes on math, AI, and other things that interest me.",
     url: "https://jamesbermudo.com",
     siteName: "Playground Log",
     locale: "en_US",
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Playground Log — James Bermudo",
+    title: "Playground Log | James Bermudo",
     description:
-      "A small corner of the internet where James Bermudo writes learning notes on math, AI, and other things that interest him.",
+      "A small corner of the internet where I dump my learning notes on math, AI, and other things that interest me.",
     creator: "@jcebermudo",
     images: ["/og-image.png"],
   },
